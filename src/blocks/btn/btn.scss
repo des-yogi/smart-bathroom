@@ -1,0 +1,73 @@
+.btn {
+
+  $block-name:                &; // #{$block-name}__element
+
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 16px;
+  margin: 0;
+  font-family: inherit;
+  text-align: center;
+  font-size: 18px;
+  line-height: $line-height;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+  color: $white;
+  border-radius: $border-radius;
+  border: 1px solid $gray-lighter;
+  background-color: $main-color;
+  //background-image: none;
+  cursor: pointer;
+  user-select: none;
+  transition: all $transition-time;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $white;
+    background-color: $blue-med;
+    border-color: $blue-med;
+  }
+
+  //&:active,
+  //&:focus {
+    // @include field-focus;
+  //}
+
+  &--disabled,
+  &:disabled {
+    // opacity: $opacity;
+    cursor: not-allowed;
+    color: $white;
+    background-color: $grey;
+    border-color: $grey;
+
+    @at-root a.btn--disabled {
+      pointer-events: none;
+    }
+  }
+
+  &--inverted {
+    color: $text-color;
+    background-color: $white;
+    border-color: $blue-light;
+
+    &:hover,
+    &:focus {
+      color: $text-color;
+      background-color: $blue-light;
+      border-color: $blue-light;
+    }
+
+    &--disabled,
+    &:disabled {
+      color: $text-muted !important;
+      background-color: $grey-light !important;
+      border-color: $grey-light !important;
+    }
+  }
+}
