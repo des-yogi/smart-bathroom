@@ -1,0 +1,123 @@
+// Базовые цвета https://colorscheme.ru/color-converter.html
+
+$black:                       #000000;
+$gray-darkest:               hsl(0, 0%, 10%);
+$gray-darker:                hsl(0, 0%, 20%);
+$gray-darken:                hsl(0, 0%, 30%);
+$gray-dark:                  hsl(0, 0%, 40%);
+$gray:                       hsl(0, 0%, 50%);
+$gray-light:                 hsl(0, 0%, 60%);
+$gray-lighten:               hsl(0, 0%, 70%);
+$gray-lighter:               hsl(0, 0%, 80%);
+$gray-lightest:              hsl(0, 0%, 90%);
+$white:                       #ffffff;
+
+$color-success:               hsl(120, 39%, 54%);
+$color-danger:                #de1f1f;
+$color-warning:               hsl(35, 84%, 62%);
+
+//$color-vk:                    #4a76a8;
+//$color-fb:                    #4267b2;
+//$color-tw:                    #40a2f5;
+//$color-gh:                    #24292e;
+
+
+// Семантические цвета
+
+$main-color:                  #1b4885; //Polynesian blue
+$color-main:                  $main-color;
+$secondary-color:             $black;
+
+$blue-med:                    #3a719e; //UCLA Blue
+$blue-light:                  #BAE1F4; //Columbia blue
+
+$grey:                        #767676; //Gray
+$grey-light:                  #ededed; //Anti-flash white
+
+$bullet-color:                #4ab1e5; //Picton Blue
+
+$text-color:                  #353535; //Jet
+$title-color:                 $text-color;
+
+$text-muted:                  $grey;
+
+$body-bg:                     $white;
+$block-bg:                    $grey-light;
+
+$link-color:                  inherit;
+$link-color--hover:           $main-color;
+
+
+$border-color:                #c8c8c8; //Silver
+$divider-color:               $border-color;
+
+$cell-border:                 $border-color;
+$cell-bg:                     $grey-light;
+
+// Базовая типографика
+
+$font-size:                   16px;
+$font-size-sm:                14px;
+
+$font-size--h1:               45px;
+$font-size--h2:               40px;
+$font-size--h3:               30px;
+$font-size--h4:               20px;
+$font-size--h5:               16px;
+$font-size--h6:               16px;
+
+$line-height:                 1.5;
+
+$typo-margin-vertical:        1em;
+
+$font-family:                'Sofia Sans', 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+$font-family--headings:      'Playfair Display', 'Times', 'Times New Roman', 'Georgia', serif;
+$font-family--monospace:     system-ui, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+
+
+// Ширины
+
+$screen-xs:                   0;
+$screen-sm:                   480px;
+$screen-md:                   768px;
+$screen-lg:                   1024px;
+$screen-xl:                   1280px;
+$screen-xxl:                  1440px;
+
+$container-sm:                100%;
+$container-md:                100%;
+$container-lg:                100%;
+$container-xl:                100%;
+$container-xxl:               $screen-xxl - 20;
+
+
+// Модульная сетка
+
+$grid-columns:                12;
+$grid-gutter-width:           16px;
+
+
+// Разное
+
+$field-padding-vertical:      5px;
+$field-padding-horizontal:    12px;
+
+$border-radius:               0;
+$border-radius--lg:           $border-radius;
+
+$opacity:                     0.7;
+$shadow:                      0 2px 15px rgba(0, 0, 0, 0.2); // моб
+$shadow-lg:                   0 4px 30px rgba(0, 0, 0, 0.4); // дескт
+$transition-time:             0.2s;
+
+
+// BS4 vars for mixins
+$enable-transitions:                          true !default;
+$enable-prefers-reduced-motion-media-query:   true !default;
+$transition-base:                             all .2s ease-in-out !default;
+$transition-fade:                             opacity .15s linear !default;
+$transition-collapse:                         height .2s ease !default;
+
+$menu-desktop-width:          $screen-xxl;
+$toggler-part-height:         2px;
+$toggler-part-bg-color:       #000;

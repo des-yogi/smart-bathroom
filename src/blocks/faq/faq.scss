@@ -1,0 +1,57 @@
+.faq {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    gap: 32px 0;
+  }
+
+  &__nav-col {
+    @include col(xs, 12, $grid-columns, 16px);
+    @include col(md, 12);
+    @include col(xl, 4, $grid-columns, 32px);
+  }
+
+  &__content-col {
+    @include col(xs, 12, $grid-columns, 16px);
+    @include col(md, 12);
+    @include col(xl, 8, $grid-columns, 32px);
+  }
+
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @media (min-width: $screen-xl) {
+      position: sticky;
+      top: 24px;
+    }
+  }
+
+  &__link {
+    padding: 8px 8px 8px 40px;
+    cursor: pointer;
+    user-select: none;
+    background-position: center left;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-image: svg-load('../blocks/sprite-svg/svg/check-circle.svg', fill=$main-color);
+
+    &:hover,
+    &:focus {
+      color: $link-color;
+    }
+
+    &.active {
+      color: $link-color !important;
+    }
+  }
+}
