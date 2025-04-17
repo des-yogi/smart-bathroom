@@ -1,0 +1,124 @@
+<!--DEV
+@ @include('blocks/mob-nav/mob-nav.html')
+-->
+
+<nav class="mob-nav">
+  <ul class="list-nostyled  mob-nav__menu">
+    <li class="mob-nav__menu-item">
+      <a href="#" class="mob-nav__menu-link">Catalogue</a>
+    </li>
+    <li class="mob-nav__menu-item  active">
+      <a href="#" class="mob-nav__menu-link">AI Model</a>
+    </li>
+    <li class="mob-nav__menu-item">
+      <a href="#" class="mob-nav__menu-link">Portfolio</a>
+    </li>
+    <li class="mob-nav__menu-item">
+      <a href="#" class="mob-nav__menu-link">Blog</a>
+    </li>
+    <li class="mob-nav__menu-item">
+      <a href="#" class="mob-nav__menu-link">FAQ</a>
+    </li>
+    <li class="mob-nav__menu-item">
+      <a href="#" class="mob-nav__menu-link">About Us</a>
+    </li>
+  </ul>
+
+  <ul class="list-nostyled  mob-nav__menu-ext" id="menuExt">
+    <li class="mob-nav__menu-ext-item  active">
+      <div class="mob-nav__menu-ext-wrapper">
+        <a href="#" class="mob-nav__menu-ext-link">Bathroom Renovation</a>
+        <button class="mob-nav__menu-ext-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+          <span class="visually-hidden">Submenu toggler</span>
+          <svg width="20" height="20" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#plus"></use></svg>
+        </button>
+      </div>
+
+      <div id="collapse-1" class="collapse show" data-bs-parent="#menuExt">
+        <ul class="list-nostyled  mob-nav__menu-ext-submenu">
+          <li class="mob-nav__menu-ext-submenu-item  active">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Condo Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Accessible Senior Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Small Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Basement Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Master Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Guest Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Partial Bathroom Renovation</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Full Bathroom Renovation</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Product Selection Assistance</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Modern Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Bathroom Renovation Cost</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="mob-nav__menu-ext-item">
+      <div class="mob-nav__menu-ext-wrapper">
+        <a href="#" class="mob-nav__menu-ext-link">Kitchen Renovation</a>
+        <button class="mob-nav__menu-ext-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+          <span class="visually-hidden">Submenu toggler</span>
+          <svg width="20" height="20" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#plus"></use></svg>
+        </button>
+      </div>
+
+      <div id="collapse-2" class="collapse" data-bs-parent="#menuExt">
+        <ul class="list-nostyled  mob-nav__menu-ext-submenu">
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Condo Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Accessible Senior Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Small Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Basement Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Master Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Guest Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Partial Bathroom Renovation</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Full Bathroom Renovation</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Product Selection Assistance</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Modern Bathroom</a>
+          </li>
+          <li class="mob-nav__menu-ext-submenu-item">
+            <a href="#" class="mob-nav__menu-ext-submenu-link">Bathroom Renovation Cost</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>

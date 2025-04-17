@@ -1,9 +1,100 @@
-// В этом файле должны быть стили для БЭМ-блока hero, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .hero {
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0;
+  // margin-bottom: 80px;
+
+  // @media (min-width: $screen-md) {
+  //   gap: 40px 0;
+  //   margin-bottom: 100px;
+  // }
+
+  // @media (min-width: $screen-xxl) {
+  //   margin-bottom: 140px;
+  // }
 
   $block-name:                &; // #{$block-name}__element
 
+  &__title {
+    margin: 0;
+  }
+
+  &__inner {
+    gap: 24px 0;
+  }
+
+  &__features-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xxl, 6, $grid-columns, 32px);
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xxl, 6, $grid-columns, 32px);
+  }
+
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+    font-size: 20px;
+
+    @media (min-width: $screen-xl) {
+      flex-direction: initial;
+      align-items: baseline;
+      gap: 0 64px;
+    }
+  }
+
+  // &__feature {
+
+  // }
+
+  &__text {
+
+    & > .h5 {
+      margin: 0 0 24px !important;
+
+      @media (min-width: $screen-md) {
+        margin-bottom: 32px !important;
+      }
+
+      & > p {
+        //margin: 0;
+        text-wrap: balance;
+        hyphens: none;
+      }
+    }
+  }
+
+  &__slogan {
+    margin-bottom: 16px;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 32px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background-color: $block-bg;
+    border-radius: $border-radius--img;
+
+    @media (min-width: $screen-md) {
+      height: 480px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
 }

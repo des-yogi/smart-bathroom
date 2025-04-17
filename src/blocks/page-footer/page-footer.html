@@ -2,6 +2,98 @@
 @ @include('blocks/page-footer/page-footer.html')
 -->
 
-<footer class="page-footer">
-  page-footer
+<footer class="container  page-footer">
+  <div class="page-footer__inner">
+
+    <section class="page-footer__contacts">
+      <h2 class="display-2  page-footer__contacts-title">You can contact us by:</h2>
+
+      <ul class="list-nostyled  page-footer__contact-list">
+
+        <li class="page-footer__contact-item">
+          <span class="h4">email:</span>
+          <a href="mailto:info@smartbathroomsrenovation.ca" class="h5">
+            info@smartbathroomsrenovation.ca
+          </a>
+        </li>
+
+        <li class="page-footer__contact-item">
+          <span class="h4">phone:</span>
+          <a href="tel:+14164817477" class="h5">+14164817477</a>
+        </li>
+
+        <li class="page-footer__contact-item">
+          <span class="h4">or visit our showroom at:</span>
+          <span class="h5">306 Eglinton Ave W</span>
+        </li>
+
+      </ul>
+
+      @@include('../../blocks/rating/rating.html')
+    </section>
+
+    <div class="page-footer__main">
+
+      <nav class="page-footer__nav">
+        <ul class="list-nostyled  page-footer__nav-list">
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Services</a>
+          </li>
+          <li class="page-footer__nav-item  active">
+            <a href="#" class="page-footer__nav-link">Portfolio</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Our Blog</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Elements</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">AI Model</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Elements</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">FAQ</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">About Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="row  page-footer__info">
+        <div class="page-footer__logo-col">
+          <a href="index.html" class="logo  logo--footer">
+            <img src="img/sbr-vert.svg" alt="Site name" width="82" height="140" loading="lazy">
+          </a>
+        </div>
+
+        <div class="page-footer__credentials-col">
+          <p>Privicy Policy: Smart Bathrooms Renovation is committed to respecting the privacy of individuals and recognizes a need for the appropriate management and protection of any personal information that you agree to provide to us. We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request.</p>
+        </div>
+
+        <div class="page-footer__social-col">
+          <ul class="list-nostyled  page-footer__social">
+            <li class="page-footer__social-item">
+              <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">Facebook</a>
+            </li>
+            <li class="page-footer__social-item">
+              <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">Pinterest</a>
+            </li>
+            <li class="page-footer__social-item">
+              <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="page-footer__copyrights">
+      @@include('../../blocks/copyrights/copyrights.html')
+    </div>
+
+  </div>
 </footer>

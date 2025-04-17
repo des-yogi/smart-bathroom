@@ -1,11 +1,11 @@
 .faq {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  // padding-top: 48px;
+  // padding-bottom: 48px;
 
-  @media (min-width: $screen-xl) {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
+  // @media (min-width: $screen-xl) {
+  //   padding-top: 64px;
+  //   padding-bottom: 64px;
+  // }
 
   $block-name:                &; // #{$block-name}__element
 
@@ -15,14 +15,29 @@
 
   &__nav-col {
     @include col(xs, 12, $grid-columns, 16px);
-    @include col(md, 12);
-    @include col(xl, 4, $grid-columns, 32px);
+    @include col-offset(md, 1);
+    @include col(md, 5);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 5, $grid-columns, 32px);
+
+    @media (min-width: $screen-md) {
+      order: 1;
+    }
   }
 
   &__content-col {
     @include col(xs, 12, $grid-columns, 16px);
-    @include col(md, 12);
-    @include col(xl, 8, $grid-columns, 32px);
+    @include col(md, 6);
+    @include col(xxl, 6, $grid-columns, 32px);
+  }
+
+  &__header,
+  &__title {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
   }
 
   &__tabs {
@@ -30,20 +45,31 @@
     flex-direction: column;
     gap: 8px;
 
-    @media (min-width: $screen-xl) {
+    @media (min-width: $screen-md) {
       position: sticky;
       top: 24px;
     }
   }
 
   &__link {
-    padding: 8px 8px 8px 40px;
+    padding: 8px 8px 8px 0;
     cursor: pointer;
     user-select: none;
-    background-position: center left;
-    background-size: 24px;
-    background-repeat: no-repeat;
-    background-image: svg-load('../blocks/sprite-svg/svg/check-circle.svg', fill=$main-color);
+    //background-position: center left;
+    //background-size: 24px;
+    //background-repeat: no-repeat;
+    //background-image: svg-load('../blocks/sprite-svg/svg/check-circle.svg', fill=$main-color);
+
+    &::before {
+      display: inline-block;
+      vertical-align: text-top;
+      content: "";
+      width: 20px;
+      height: 20px;
+      margin-right: 16px;
+      background-color: $grey-light;
+      border-radius: 50%;
+    }
 
     &:hover,
     &:focus {
@@ -52,6 +78,10 @@
 
     &.active {
       color: $link-color !important;
+
+      &::before {
+        background-color: $bullet-color;
+      }
     }
   }
 }

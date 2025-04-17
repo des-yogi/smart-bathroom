@@ -1,0 +1,67 @@
+.service-areas {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    gap: 20px 0;
+    margin-bottom: 40px;
+  }
+
+  &__title-col,
+  &__info-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xxl, 6, $grid-columns, 32px);
+    display: flex;
+
+    @media (min-width: $screen-md) {
+      align-items: flex-start;
+    }
+
+    @media (min-width: $screen-xxl) {
+      align-items: center;
+    }
+  }
+
+  // &__info-col {
+
+  // }
+
+  &__title,
+  &__info {
+    margin: 0 !important;
+  }
+
+  &__title {
+    width: 100%;
+  }
+
+  &__info {
+
+    p {
+      text-wrap: balance;
+    }
+  }
+
+  &__body {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    color: $main-color;
+
+    @media (min-width: $screen-md) {
+      column-count: 3;
+      column-gap: 16px;
+      column-fill: balance;
+    }
+  }
+
+  &__list-item {
+
+    & > * {
+      display: inline-flex;
+      padding: 12px;
+    }
+  }
+}

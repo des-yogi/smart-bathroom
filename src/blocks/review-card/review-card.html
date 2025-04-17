@@ -1,14 +1,31 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/review-card/review-card.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="review-card">content</div>
-
+@ @include('blocks/review-card/review-card.html', {
+  "ava": "ava",
+  "title": "Anna Gafiyatullina",
+  "rating": "5",
+  "text": "<p>When we decided it was time to update our bathroom, we went all in with a full remodeling project, and we couldn't be happier with the results. From start to finish, the experience was smooth and satisfying.</p><p>Smart Bathrooms approached the project with professionalism and expertise. They listened attentively to our ideas and needs, offering valuable suggestions along the way. Communication was excellent, with regular updates on the progress and any adjustments that needed to be made.</p><p>The quality of workmanship was exceptional. Every detail, from the tiling to the fixtures, was meticulously executed. The was a bit of delay on product delivery but we understand that was a special order and we needed to wait a bit. Other than that everything was fantastic. Thank you Natallia!!!</p><p>If you're considering a bathroom renovation, don't hesitate to go all out – the results are truly worth it.</p>"
+})
 -->
+
+<article class="review-card">
+  <div class="review-card__header">
+    <div class="embed-responsive embed-responsive--1-1  review-card__ava">
+      <picture>
+        <source srcset="img/@@ava.webp,
+                        img/@@ava.webp 2x" type="image/webp">
+        <img src="img/@@ava.png"
+          srcset="img/@@ava.png,
+                  img/@@ava.png 2x" width="140" height="140" loading="lazy">
+        <!-- 70x70, 140x140 2x -->
+      </picture>
+    </div>
+    <h3 class="h4  review-card__title">@@title</h3>
+    <div class="stars" style="--rating: @@rating;">
+      <p class="visually-hidden">Rating of this product is @@rating out of 5</p>
+    </div>
+  </div>
+
+  <div class="review-card__body">
+    @@text
+  </div>
+</article>

@@ -1,0 +1,58 @@
+<!--DEV
+@ @include('blocks/mirror-block/mirror-block.html', {
+  "mirrClass": "",
+  "img": "vertical-3x2-1",
+  "title": "Master Bathroom Renovation Deal",
+  "intro": "<p>Create stunning oasis space from your en-suite bathroom with our exclusive renovation package and enjoy a luxury transformation at 30% less!</p>",
+  "label": "-30%"
+})
+-->
+
+<article class="container  block-m  mirror-block  @@mirrClass">
+  <!-- mirror-block--reversed -->
+  <div class="row  mirror-block__row">
+
+    <div class="mirror-block__text-col">
+      <div class="mirror-block__text">
+
+        <div class="mirror-block__header">
+          <h2 class="display-2  mirror-block__title">@@title</h2>
+          <div class="h4  mirror-block__intro">
+            @@intro
+          </div>
+        </div>
+
+        <div class="mirror-block__body">
+          <p>What included:</p>
+          <ul class="bullet-list">
+            <li class="bullet-list__item">High end Fixtures & Finishes quality that stand the test of time</li>
+            <li class="bullet-list__item">Custom Shower or Tub - Designed for a long run</li>
+            <li class="bullet-list__item">Expert Construction - Full renovation, including plumbing, electrical, and waterproofing</li>
+          </ul>
+
+          <p>Special Bonus:</p>
+          <p>FREE Professional Design Service with our expert Bathroom & Kitchen Specialist when you book an en-suite bathroom renovation package!</p>
+          <p>Don't miss your chance to create your desired and unique master bathroom for life span at an unbeatable price.</p>
+          <p>Contact us today to book free Consultation!</p>
+        </div>
+        <div class="mirror-block__footer">
+          <a href="#" class="btn">
+            <span>Get a Рackage</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mirror-block__img-col">
+      <div class="mirror-block__img" data-text="@@label">
+        <picture>
+          <source srcset="img/@@img.webp" type="image/webp">
+          <source srcset="img/@@img.jpg">
+
+          <img src="img/@@img.jpg" alt="Alt" width="1032" height="1547" loading="lazy">
+        </picture>
+      </div>
+    </div>
+
+  </div>
+</article>

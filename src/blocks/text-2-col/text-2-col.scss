@@ -1,0 +1,23 @@
+.text-2-col {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    gap: 20px 0;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xxl, 6, $grid-columns, 32px);
+  }
+
+  &__title,
+  &__text {
+    margin: 0;
+  }
+
+  &__text {
+    line-height: inherit;
+  }
+}

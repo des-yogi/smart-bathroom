@@ -180,29 +180,16 @@ img {
 }
 
 a {
-  color: inherit;
+  text-decoration: none;
+  color: $link-color;
   background-color: transparent;
-  transition: color $transition-time;
+  transition: all $transition-time;
 
   &:hover,
   &:focus {
+    text-decoration: underline;
     color: $link-color--hover;
   }
-
-  // &:visited {
-  //   color: $link-color--hover;
-  // }
-
-  // На больших экранах телефоны-ссылки делаем обычным текстом (если надо)
-  /* &[href^="tel:"] {
-
-    @media (min-width: $screen-xl) {
-      white-space: nowrap;
-      pointer-events: none;
-      text-decoration: inherit;
-      color: inherit;
-    }
-  }*/
 }
 
 .fade {
@@ -335,6 +322,149 @@ a {
   }
 }
 
+.block-m {
+  margin-bottom: 80px;
+
+  @media (min-width: $screen-md) {
+    gap: 40px 0;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $screen-xxl) {
+    margin-bottom: 140px;
+  }
+}
+
+.headings-link {
+  display: inline-flex;
+  position: relative;
+  color: $text-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    height: 5px;
+    background-color: $blue-light;
+    transform-origin: 50% 103%; // X - Y
+    transition: transform $transition-time ease-in-out;
+    will-change: transform;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $text-color;
+
+    &::after {
+      transform: scaleY(4.4);
+    }
+  }
+}
+
+.swiper {
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 32px;
+
+    @media (min-width: $screen-xxl) {
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin: 0 !important;
+    word-break: normal;
+  }
+}
+
+.swiper-wrapper,
+.swiper-slide {
+  box-sizing: border-box;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.slider-controls {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+
+  @media (min-width: $screen-xxl) {
+    gap: 32px 24px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+    width: 44px;
+    height: 44px;
+
+    &::after {
+      width: 100%;
+      height: 100%;
+      font-size: 0;
+      background-color: $white;
+      background-size: 34px 30px;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: background-color $transition-time;
+    }
+
+    &:hover,
+    &:focus {
+
+      &::after {
+        background-color: $blue-light;
+      }
+    }
+  }
+
+  .swiper-button-prev {
+
+    &::after {
+      background-image: svg-load('../blocks/sprite-svg/svg/arrow-left.svg', fill=$text-color);
+    }
+
+    // &:hover,
+    // &:focus {
+
+    //   &::after {
+    //     background-image: svg-load('../blocks/sprite-svg/svg/arrow-left.svg', fill=$main-color);
+    //   }
+    // }
+  }
+
+  .swiper-button-next {
+
+    &::after {
+      background-image: svg-load('../blocks/sprite-svg/svg/arrow-right.svg', fill=$text-color);
+    }
+
+    // &:hover,
+    // &:focus {
+
+    //   &::after {
+    //     background-image: svg-load('../blocks/sprite-svg/svg/arrow-right.svg', fill=$main-color);
+    //   }
+    // }
+  }
+}
+
+
+
 // background-image: svg-load('../blocks/sprite-svg/svg/arrow-right.svg', fill=$main-color);
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color);
 
@@ -343,10 +473,3 @@ a {
 @include col(md, 6);
 @include col(xxl, 4, $grid-columns, 32px);
 */
-
-.test-col {
-  @include col(xs, 12);
-  @include col(md, 6);
-  @include col(xl, 4);
-  @include col(xxl, 3, $grid-columns, 32px);
-}

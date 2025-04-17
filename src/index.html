@@ -17,33 +17,71 @@
 
       <main>
 
-        <div class="container">
+        @@include('blocks/hero/hero.html')
 
-          <div class="row">
-            <div class="test-col">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro explicabo ad maxime distinctio similique officiis autem voluptatibus suscipit, possimus culpa nulla officia, et odit unde ut temporibus harum aspernatur in vel expedita repudiandae assumenda dolorem laboriosam. Eum, vel unde. Accusamus itaque dicta voluptatum, quo temporibus, molestiae iure unde. Eius, nam quod voluptas aperiam mollitia.</p>
-              <p>
-                <a href="#" class="btn">Test link-btn</a>
-              </p>
-            </div>
-            <div class="test-col">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos molestias optio numquam fugit minima quod possimus natus dignissimos? Perferendis totam quaerat, sunt illum laudantium atque aspernatur rerum! Deserunt repellendus, quia, dicta laborum ea minima illo libero, eos nobis doloribus voluptatibus cum? Libero rerum, beatae quisquam ab aut eum sunt illo dolorem doloribus enim quibusdam quam.</p>
-              <p><button class="btn" disabled>Test btn</button></p>
-            </div>
-            <div class="test-col">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste cupiditate hic corrupti, dolorem eaque aperiam voluptas, cumque non at quidem ullam illum voluptatum in possimus culpa omnis et, voluptatem earum perspiciatis. Maiores unde dolor eligendi illum laudantium odio accusamus nam nemo, blanditiis, minus aliquam et velit animi excepturi quisquam cumque, sit repellendus quaerat placeat quis.</p>
-              <p>
-                <a href="#" class="btn  btn--inverted">Inverted link-btn</a>
-              </p>
-            </div>
-            <div class="test-col">
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum eveniet maiores earum odio laborum rem debitis delectus quidem. Totam porro dolor quibusdam facilis, quae necessitatibus amet dolorum hic ullam laudantium sed eveniet! Natus tenetur architecto ex perferendis eius veniam. Sed labore aliquid quo eos rerum eaque, dolor itaque, placeat, voluptatum expedita saepe fugiat architecto mollitia?</p>
+        @@include('blocks/solutions/solutions.html')
 
-              <p><button class="btn  btn--inverted" disabled>Inverted btn</button></p>
-            </div>
-          </div>
+        @@include('blocks/showroom-slider/showroom-slider.html')
 
-        </div>
+        @@include('blocks/text-2-col/text-2-col.html', {
+          "title": "It's good for You! It's good for Us!",
+          "text": "<p>At Smart Bathrooms Renovation we bring together word class design, premium materials, and seamless project execution to create bathrooms that reflect intelligence, sophistication, and timeless elegance.</p><p>Our vision is to express the best design experience and exceptional craftmanship that reflects a clean, eco-friendly environment within your home. We help bring your vision to life by making colours and textures work together without losing your style. Our vision is to give an opportunity to everyone for the creation of a well-organized, aesthetically pleasing, and comfortable bathroom that is essential for your long-term wellbeing and health.</p>"
+        })
+
+        @@include('blocks/incut-block/incut-block.html', {
+          "addClass": ""
+        })
+
+        @@include('blocks/services/services.html')
+
+        @@include('blocks/reasons/reasons.html')
+
+        @@include('blocks/mirror-block/mirror-block.html', {
+          "mirrClass": "",
+          "img": "vertical-3x2-1",
+          "title": "Master Bathroom Renovation Deal",
+          "intro": "<p>Create stunning oasis space from your en-suite bathroom with our exclusive renovation package and enjoy a luxury transformation at 30% less!</p>",
+          "label": "-30%"
+        })
+
+        @@include('blocks/mirror-block/mirror-block.html', {
+          "mirrClass": "mirror-block--reversed",
+          "img": "vertical-3x2-2",
+          "title": "Small Bathroom Package",
+          "intro": "<p>Small Bathroom Renovation - All-Inclusive Package!</p><p>SMALL BATH Package with high end finish materials for $24,999</p>",
+          "label": "All-Inclusive"
+        })
+
+        @@include('blocks/showroom-slider/showroom-slider.html')
+
+        @@include('blocks/text-2-col/text-2-col.html', {
+          "title": "We use the best brands at reliable prices",
+          "text": "<p>Wide range products for your bathroom renovation needs from luxury to affordable. That includes ETL certified LED mirrors and CSA approved towel warmers, ensuring they meet Canadian safety standards. For modern kitchen or bathroom fixtures it is important to consider both energy-efficiency and safety that are approved and meet Canadian standards. We prioritize your future by exclusively offering certified plumbing and electrical fixtures that meet North American Standards and align with electrical inspections requirements.</p>"
+        })
+
+        @@include('blocks/contact-block/contact-block.html', {
+          "formId": "formConsult"
+        })
+
+        @@include('blocks/brand-slider/brand-slider.html')
+
+        @@include('blocks/portfolio-slider/portfolio-slider.html')
+
+        @@include('blocks/review-slider/review-slider.html')
+
+        @@include('blocks/incut-block/incut-block.html', {
+          "addClass": "incut-block--reversed"
+        })
+
+        @@include('blocks/our-blog/our-blog.html')
+
+        @@include('blocks/faq/faq.html')
+
+        @@include('blocks/contact-block/contact-block.html', {
+          "formId": "formContact"
+        })
+
+        @@include('blocks/service-areas/service-areas.html')
 
       </main>
 

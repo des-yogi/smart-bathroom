@@ -4,7 +4,7 @@
 }
 
 .before-after-wrapper::before {
-  background-color: hsla(172, 61%, 82%, 75%);
+  background-color: #ededed;
   border-radius: 40px;
   top: 10px;
   //color: green;
@@ -22,7 +22,7 @@
 }
 
 .before-after-wrapper::after {
-  background-color: hsla(172, 61%, 82%, 75%);
+  background-color: #ededed;
   border-radius: 40px;
   top: 10px;
   //color: green;
@@ -62,7 +62,7 @@
 
 .handle {
   align-items: center;
-  background: #EFE8E2;
+  background: #ededed;
   bottom: 0;
   cursor: col-resize;
   display: flex;
@@ -85,14 +85,11 @@
   align-items: center;
   justify-content: center;
   content: '';
-  background-color: #EFE8E2;
+  background-color: #ededed;
   background-image: svg-load('../blocks/sprite-svg/svg/dragger.svg', fill=$main-color);
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
-  //color: green;
-  //font-size: 16px;
-  //font-weight: bold;
   max-height: 50px;
   max-width: 50px;
   min-height: 50px;
@@ -100,7 +97,7 @@
 }
 
 .before-after {
-  border-radius: $border-radius--lg;
+  border-radius: $border-radius--img;
   overflow: hidden;
 
   $block-name:                &; // #{$block-name}__element

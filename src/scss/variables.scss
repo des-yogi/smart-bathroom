@@ -44,7 +44,7 @@ $text-muted:                  $grey;
 $body-bg:                     $white;
 $block-bg:                    $grey-light;
 
-$link-color:                  inherit;
+$link-color:                  $main-color;
 $link-color--hover:           $main-color;
 
 
@@ -103,12 +103,16 @@ $field-padding-vertical:      5px;
 $field-padding-horizontal:    12px;
 
 $border-radius:               0;
+$border-radius--img:          4px;
 $border-radius--lg:           $border-radius;
 
 $opacity:                     0.7;
 $shadow:                      0 2px 15px rgba(0, 0, 0, 0.2); // моб
 $shadow-lg:                   0 4px 30px rgba(0, 0, 0, 0.4); // дескт
-$transition-time:             0.2s;
+
+$grey-gradient:               linear-gradient(to bottom, $grey-light 60%, $white 100%);
+
+$transition-time:             0.25s;
 
 
 // BS4 vars for mixins
@@ -119,5 +123,5 @@ $transition-fade:                             opacity .15s linear !default;
 $transition-collapse:                         height .2s ease !default;
 
 $menu-desktop-width:          $screen-xxl;
-$toggler-part-height:         2px;
+$toggler-part-height:         1px;
 $toggler-part-bg-color:       #000;

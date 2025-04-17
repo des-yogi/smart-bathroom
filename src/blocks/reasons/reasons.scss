@@ -1,0 +1,8 @@
+.reasons {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    margin-bottom: 40px;
+  }
+}

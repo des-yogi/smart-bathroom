@@ -35,7 +35,21 @@
     "brand-slider": [],
     "faq": [],
     "contact-block": [],
-    "contact-form": []
+    "contact-form": [],
+    "mob-nav": [],
+    "solutions": [],
+    "solution-card": [],
+    "text-2-col": [],
+    "incut-block": [],
+    "services": [],
+    "service-item": [],
+    "reasons": [],
+    "mirror-block": [],
+    "our-blog": [],
+    "blog-item": [],
+    "service-areas": [],
+    "review-slider": [],
+    "portfolio-slider": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

@@ -1,8 +1,96 @@
-// В этом файле должны быть стили для БЭМ-блока page-header, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .page-header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 16px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 32px;
+  }
 
   $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: 78px;
+    border-bottom: 1px solid $border-color;
+
+    @media (min-width: $screen-xxl) {
+      min-height: 100px;
+    }
+  }
+
+  &__short-menu {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0 24px;
+    }
+  }
+
+  // &__short-menu-item {
+
+  // }
+
+  &__short-menu-link,
+  &__menu-btn-text {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &__short-menu-link {
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: $main-color;
+    }
+  }
+
+  &__menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-width: 48px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: $white;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover,
+    &:focus {
+      color: $link-color--hover;
+    }
+  }
+
+  &__menu-btn-text {
+    display: none;
+
+    @media (min-width: $screen-xl) {
+      display: block;
+      white-space: nowrap;
+      transition: color $transition-time;
+    }
+  }
+
+  // &__menu-wrapper {
+
+  // }
 }

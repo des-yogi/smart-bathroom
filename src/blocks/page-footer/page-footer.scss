@@ -1,8 +1,183 @@
-// В этом файле должны быть стили для БЭМ-блока page-footer, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .page-footer {
+  color: $white;
+  background-color: $black;
 
   $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+
+    & > * {
+      padding: 40px 0;
+
+      @media (min-width: $screen-xxl) {
+        padding: 80px 0;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid $white;
+  }
+
+  &__contacts-title {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__contact-list,
+  &__contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px 0;
+  }
+
+  &__contact-list {
+    margin-bottom: 40px;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__contact-item {
+    gap: 8px 0;
+
+    & > span,
+    & > a {
+      margin: 0;
+      color: inherit;
+    }
+
+    a {
+
+      &:hover,
+      &:focus {
+        color: $blue-light !important;
+      }
+    }
+  }
+
+  &__main {
+    border-bottom: 1px solid $white;
+  }
+
+  &__nav {
+    margin-bottom: 40px;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 16px;
+
+    @media (min-width: $screen-xxl) {
+      gap: 32px;
+    }
+  }
+
+  &__nav-item {
+
+    &.active {
+
+      #{$block-name}__nav-link {
+        color: $blue-light !important;
+        text-decoration: underline;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__nav-link {
+    display: inline-flex;
+    padding: 4px 0;
+    color: inherit !important;
+    user-select: none;
+
+    &:hover,
+    &:focus {
+      color: $blue-light !important;
+    }
+  }
+
+  &__info {
+    gap: 40px 0;
+  }
+
+  &__logo-col {
+    @include col(xs, 12);
+    @include col(md, 2);
+    @include col(xxl, 2, $grid-columns, 32px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $screen-md) {
+      align-items: flex-start;
+    }
+  }
+
+  &__credentials-col {
+    @include col(xs, 12);
+    @include col(md, 8);
+    @include col(xxl, 8, $grid-columns, 32px);
+
+    p {
+      font-size: $font-size-sm;
+      text-align: center;
+      text-wrap: pretty;
+      line-height: 1.72;
+      hyphens: none;
+    }
+  }
+
+  &__social-col {
+    @include col(xs, 12);
+    @include col(md, 2);
+    @include col(xxl, 2, $grid-columns, 32px);
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px 0;
+
+    @media (min-width: $screen-md) {
+      align-items: flex-end;
+    }
+  }
+
+  // &__social-item {
+
+  // }
+
+  &__social-link {
+    display: inline-flex;
+    padding: 4px 0;
+    color: inherit !important;
+    user-select: none;
+
+    &:hover,
+    &:focus {
+      color: $blue-light !important;
+    }
+  }
+
+  // &__copyrights {
+
+  // }
 }
