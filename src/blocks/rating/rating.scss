@@ -1,8 +1,12 @@
-// В этом файле должны быть стили для БЭМ-блока rating, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  @media (min-width: $screen-md) {
+    gap: 32px;
+  }
 
   $block-name:                &; // #{$block-name}__element
 

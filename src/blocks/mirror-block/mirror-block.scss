@@ -1,0 +1,155 @@
+.mirror-block {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    gap: 40px 0;
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xxl, 6, $grid-columns, 32px);
+    order: 1;
+
+    @media (min-width: $screen-xxl) {
+      order: 0;
+    }
+  }
+
+  &__img-col {
+    @include col(xs, 12);
+    //@include col(md, 12);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 5, $grid-columns, 32px);
+  }
+
+  &__text {
+
+  }
+
+  &__header
+  &__title {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  // &__intro {
+
+  // }
+
+  &__body {
+
+    ul {
+      list-style: none;
+      padding-left: 36px;
+      font-weight: 700;
+    }
+
+    li {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -36px;
+        width: 20px;
+        height: 20px;
+        background-color: $bullet-color;
+        border-radius: 50%;
+
+        @media (min-width: $screen-xxl) {
+          top: 2px;
+        }
+      }
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+  }
+
+  &__footer {
+    margin-top: 20px;
+
+    @media (min-width: $screen-xxl) {
+      margin-top: 40px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border-radius: $border-radius--img;
+    overflow: hidden;
+
+    @media (min-width: $screen-xxl) {
+      height: 780px;
+    }
+
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      z-index: 1;
+      top: 32px;
+      right: 32px;
+      padding: 8px 16px;
+      font-size: 30px;
+      font-weight: 500;
+      color: $white;
+      background-color: $bullet-color;
+
+      @media (min-width: $screen-md) {
+        padding: 8px 32px;
+      }
+
+      @media (min-width: $screen-xxl) {
+        right: initial;
+        left: 32px;
+        padding: 12px 32px;
+        font-size: 36px;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &--reversed {
+
+    #{$block-name}__row {
+
+      @media (min-width: $screen-xxl) {
+       flex-direction: row-reverse;
+      }
+    }
+
+    #{$block-name}__text-col {
+      @include col-offset(xxl, 1);
+      @include col(xxl, 6, $grid-columns, 32px);
+    }
+
+    #{$block-name}__img-col {
+      @include col-offset(xxl, 0);
+      @include col(xxl, 5, $grid-columns, 32px);
+    }
+  }
+}

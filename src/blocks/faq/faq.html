@@ -1,14 +1,88 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/faq/faq.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="faq">content</div>
-
 -->
+
+<section class="container  block-m  faq">
+
+  <div class="row  faq__row">
+
+    <div class="faq__nav-col">
+      <div class="faq__header">
+        <h2 class="display-2  faq__title">FAQ</h2>
+        <div class="faq__intro">
+          <p>The transformation from small, dark space into a bright, cozy area has created truly inviting atmosphere.</p>
+        </div>
+      </div>
+
+      <ul class="nav nav-tabs  faq__tabs" id="faqTab" role="tablist">
+        <li class="nav-item  faq__item" role="presentation">
+          <button class="nav-link  faq__link  active" id="tab-1" data-bs-toggle="tab" data-bs-target="#tab-1-pane" type="button" role="tab" aria-controls="tab-1-pane" aria-selected="true">General</button>
+        </li>
+        <li class="nav-item  faq__item" role="presentation">
+          <button class="nav-link  faq__link" id="tab-2" data-bs-toggle="tab" data-bs-target="#tab-2-pane" type="button" role="tab" aria-controls="tab-2-pane" aria-selected="false">Bathroom Renovation Tips</button>
+        </li>
+        <li class="nav-item  faq__item" role="presentation">
+          <button class="nav-link  faq__link" id="tab-3" data-bs-toggle="tab" data-bs-target="#tab-3-pane" type="button" role="tab" aria-controls="tab-3-pane" aria-selected="false">Payment Details</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="faq__content-col">
+      <div class="tab-content" id="faqTabContent">
+
+        <div class="tab-pane fade show active" id="tab-1-pane" role="tabpanel" aria-labelledby="tab-1" tabindex="0">
+          <div class="accordion" id="accordionFaq">
+
+            <div class="accordion__item">
+              <h3 class="accordion__header">
+                <button class="accordion__button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                  <span class="accordion__title">How can I get a quote for my project?</span>
+                  <span class="accordion__icon"><span></span></span>
+                </button>
+              </h3>
+              <div id="collapse-1" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
+                <div class="accordion__body">
+                  <p>You can claim up to $50,000 in qualifying expenditures for each qualifying renovation that is completed. The tax credit is 15% of the cost, up to a maximum $7,500 for each claim you are eligible to make.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3 class="accordion__header">
+                <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                  <span class="accordion__title">Do I pay by credit card, by cheque, or in cash?</span>
+                  <span class="accordion__icon"><span></span></span>
+                </button>
+              </h3>
+              <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                <div class="accordion__body">
+                  <p>Opting for a tub-to-shower remodel only (partial renovation) can save you more than half the total renovation cost.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3 class="accordion__header">
+                <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                  <span class="accordion__title">Question with answer?</span>
+                  <span class="accordion__icon"><span></span></span>
+                </button>
+              </h3>
+              <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                <div class="accordion__body">
+                  <p>A no-step shower and shower bench are the best ways to create friendly showers for seniors and people with limited mobility.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="tab-2-pane" role="tabpanel" aria-labelledby="tab-2" tabindex="0">2...</div>
+
+        <div class="tab-pane fade" id="tab-3-pane" role="tabpanel" aria-labelledby="tab-3" tabindex="0">3...</div>
+      </div>
+    </div>
+
+  </div>
+
+</section>

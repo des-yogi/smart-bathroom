@@ -1,16 +1,25 @@
 <!--DEV
-@ @include('blocks/before-after/before-after.html')
+@ @include('blocks/before-after/before-after.html', {
+  "imgBefore": "1-before-735w",
+  "imgAfter": "1-after-735w"
+})
 -->
 
 <div class="before-after  before-after-wrapper">
   <!-- before image: width starts at 50% but will change depending on where the slider is -->
   <div class="before-image-wrapper" style="width: 50%;">
-    <div class="before-image" style="background-image: url('img/1-before-big.jpg');"></div>
+    <div class="before-image"
+         style="background-image: url('img/@@imgBefore.jpg');"
+         data-bg="img/@@imgBefore.jpg"
+         data-bg-webp="img/@@imgBefore.webp"></div>
   </div>
 
-  <!-- after image: takes up entire width -->
-  <div class="after-image" style="background-image: url('img/1-after-big.jpg');"></div>
 
-  <!-- draggable slider with handle -->
+  <!-- after image: takes up entire width -->
+  <div class="after-image"
+       style="background-image: url('img/@@imgAfter.jpg');"
+       data-bg="img/@@imgAfter.jpg"
+       data-bg-webp="img/@@imgAfter.webp"></div>
+
   <span class="handle draggable"></span>
 </div>

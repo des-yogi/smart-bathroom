@@ -1,0 +1,41 @@
+<!--DEV
+@ @include('blocks/reasons/reasons.html')
+-->
+
+<section class="container  block-m  reasons">
+  <h2 class="display-2  reasons__title">Why Choose Smart Bathrooms Renovation</h2>
+
+  <div class="row  solutions__row">
+    <div class="solutions__card-col">
+      @@include('../../blocks/solution-card/solution-card.html', {
+        "icon": "palette",
+        "title": "Full customization",
+        "descr": "Projects are completed on time without compromising quality. At Smart Bathrooms our bathroom experts and renovation contractors coordinate every aspect of the project, from demolition to final touches, streamlining each phase for optimal results. With accurate planning and years of experience, we minimize delays transforming your bathroom into functional and stylish space while staying on schedule."
+      })
+    </div>
+
+    <div class="solutions__card-col">
+      @@include('../../blocks/solution-card/solution-card.html', {
+        "icon": "bath",
+        "title": "Online support",
+        "descr": "Plays an important role for us to make bathroom renovation service seamless and stress-free. Whether you’re planning to renovate a bathroom or need advice on bathroom remodeling, our team is here to assist you at every step. We provide online support prior-during-and after renovation service. Connect with a bathroom contractor online to discuss your project, get estimates, and explore design ideas without leaving your home. We ensure you get a quick response and guidance to help bring your dream bathroom to life."
+      })
+    </div>
+
+    <div class="solutions__card-col">
+      @@include('../../blocks/solution-card/solution-card.html', {
+        "icon": "checklist",
+        "title": "Clear Budget",
+        "descr": "Successful bathroom renovation starts with a clear budget. It helps homeowners make correct decisions, avoid unexpected expenses, and stay on track with the project. We are here to assist you throughout the projects whether it’s part of a home renovation or a full home remodelling plan. We provide detailed cost estimates and transparent pricing, so you can manage your renovation with confidence and archieve the bathroom you’ve envisioned."
+      })
+    </div>
+
+    <div class="solutions__card-col">
+      @@include('../../blocks/solution-card/solution-card.html', {
+        "icon": "harmony",
+        "title": "Complementary design",
+        "descr": "When renovating a bathroom, having design and ideas right before construction begins saves money, time and frustration. That’s where complementary design services can make a big impact. We provide professional design service including 3D rendering and color scheme  design that would help you visualize your new space and make confident choices before the work starts. This service is offered free with your bathroom renovation project because we believe smart planning leads to better results. We help bring your vision to life by making it clear, smoother with fewer surprises."
+      })
+    </div>
+  </div>
+</section>

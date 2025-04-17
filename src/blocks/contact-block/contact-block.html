@@ -1,14 +1,64 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/contact-block/contact-block.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="contact-block">content</div>
-
+@ @include('blocks/contact-block/contact-block.html', {
+  "formId": "formConsult"
+})
 -->
+
+<section class="container  block-m  contact-block"
+         data-bg="img/hero-img.jpg"
+         data-bg-webp="img/hero-img.webp"
+         data-bg-speed="0.5">
+         <!-- 1920x1080 -->
+
+  <div class="contact-block__inner">
+    <h2 class="display-2  contact-block__title">Get a project done with us!</h2>
+    <form id="@@formId" class="contact-form" action="#" method="post">
+
+      <label class="field-text">
+        <span class="field-text__name">Name</span>
+        <span class="field-text__input-wrap">
+          <input class="field-text__input" type="text" name="name" value="">
+          <span class="field-text__help-text" data-error="name"></span>
+        </span>
+      </label>
+
+      <label class="field-text">
+        <span class="field-text__name">Email (*)</span>
+        <span class="field-text__input-wrap">
+          <input class="field-text__input" type="email" name="email" value="">
+          <span class="field-text__help-text" data-error="email"></span>
+        </span>
+      </label>
+
+      <label class="field-text">
+        <span class="field-text__name">Phone</span>
+        <span class="field-text__input-wrap">
+          <input class="field-text__input" type="tel" name="tel" value="">
+          <span class="field-text__help-text" data-error="tel"></span>
+        </span>
+      </label>
+
+      <label class="field-text">
+        <span class="field-text__name">Your message</span>
+        <span class="field-text__input-wrap">
+          <textarea class="field-text__input" name="message" rows="4"></textarea>
+          <span class="field-text__help-text" data-error="message"></span>
+        </span>
+      </label>
+
+      <div class="field-actions  field-actions__agreement">
+        <!-- <div class="field-actions__text">* — обязательные поля</div> -->
+        <div class="field-checkbox">
+          <label class="field-checkbox__name">
+            <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+            <span class="field-checkbox__name-text">I agree to the processing of personal data in accordance with the <a href="#">Privacy Policy</a></span>
+          </label>
+        </div>
+
+        <button class="btn  solutions__submit" type="submit"><span>Submit</span></button>
+      </div>
+
+    </form>
+  </div>
+
+</section>

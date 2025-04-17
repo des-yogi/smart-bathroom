@@ -1,0 +1,50 @@
+.our-blog {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    gap: 20px 0;
+    margin-bottom: 40px;
+  }
+
+  &__intro-col {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 5);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 5, $grid-columns, 32px);
+    display: flex;
+
+    @media (min-width: $screen-md) {
+      justify-content: flex-end;
+    }
+
+    @media (min-width: $screen-xxl) {
+      align-items: flex-end;
+    }
+  }
+
+  &__title-col {
+    @include col(xs, 12);
+    //@include col-offset(md, 1);
+    @include col(md, 6);
+    @include col-offset(xxl, 0);
+    @include col(xxl, 6, $grid-columns, 32px);
+  }
+
+  &__intro {
+    margin: 0;
+    text-align: right;
+    text-wrap: balance;
+  }
+
+  &__title {
+    margin: 0 !important;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+  }
+}

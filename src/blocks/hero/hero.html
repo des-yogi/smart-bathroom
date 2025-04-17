@@ -1,14 +1,52 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/hero/hero.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="hero">content</div>
-
 -->
+
+<div class="container  block-m  hero">
+  <h1 class="hero__title">Bathroom renovation affordable luxury</h1>
+
+  <div class="row  hero__inner">
+    <div class="hero__features-col">
+      <ul class="list-nostyled  hero__features">
+        <li class="hero__feature">Wellbeing</li>
+        <li class="hero__feature">Aesthetics</li>
+        <li class="hero__feature">Quality of life</li>
+      </ul>
+    </div>
+
+    <div class="hero__text-col">
+      <div class="hero__text">
+        <p class="h4  hero__slogan">We don't just renovate — we guide!</p>
+        <div class="h5">
+          <p>From endless choices of tiles, fixtures, textures to lighting it quickly becomes overwhelming.</p>
+          <p>That’s where we come in. Helping you make confident decisions that reflect style, without the stress.</p>
+        </div>
+        <div class="hero__links">
+          <a href="#" class="btn">
+            <span>Get a Free Consultation</span>
+          </a>
+          <a href="tel:+14164817477" class="btn  btn--inverted">
+            <span>Call us: +14164817477</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__img">
+    <picture>
+      <source srcset="img/hero-img.webp,
+                      img/hero-img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/hero-img.jpg,
+                      img/hero-img.jpg 2x" media="(min-width: 1280px)">
+      <!-- 1264x480, 1896x720 -->
+      <source srcset="img/hero-img.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/hero-img.jpg" media="(min-width: 768px)">
+      <!-- 1264x480 -->
+      <source srcset="img/hero-img.webp" media="(min-width: 280px)" type="image/webp">
+      <source srcset="img/hero-img.jpg" media="(min-width: 280px)">
+      <!-- 909x345 -->
+      <img src="img/hero-img.jpg" alt="" width="1896" height="720">
+    </picture>
+  </div>
+</div>

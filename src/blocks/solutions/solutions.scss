@@ -1,0 +1,91 @@
+.solutions {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    margin-bottom: 32px;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__intro {
+    text-align: right;
+
+    span {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 500px;
+      hyphens: none;
+    }
+  }
+
+  &__row {
+    gap: 16px 0;
+
+    @media (min-width: $screen-xxl) {
+      gap: 32px 0;
+    }
+  }
+
+  &__card-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xxl, 3, $grid-columns, 32px);
+  }
+
+  &__form-wrapper {
+    gap: 40px 0;
+    margin-top: 32px;
+
+    @media (min-width: $screen-xxl) {
+      margin-top: 40px;
+    }
+  }
+
+  &__form-col,
+  &__img-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xxl, 5, $grid-columns, 32px);
+  }
+
+  &__form-col {
+    @include col-offset(xxl, 1);
+
+    .contact-form {
+      height: 100%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: $border-radius--img;
+
+    @media (min-width: $screen-md) {
+      height: 100%;
+      max-height: 660px;
+    }
+
+    //@media (min-width: $screen-xxl) {}
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__submit {
+    min-width: 180px;
+  }
+}

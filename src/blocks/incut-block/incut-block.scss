@@ -1,0 +1,71 @@
+.incut-block {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $block-bg;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    gap: 48px 0;
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 5);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 4, $grid-columns, 32px);
+  }
+
+  &__img-col {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 6);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 5, $grid-columns, 32px);
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__text-wrapper {
+
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    border-radius: $border-radius--img;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &--reversed {
+
+    #{$block-name}__text-col {
+      @include col-offset(md, 1);
+      @include col-offset(xxl, 1);
+
+      @media (min-width: $screen-md) {
+        order: 1;
+      }
+    }
+
+    #{$block-name}__img-col {
+      @include col-offset(md, 0);
+      @include col-offset(xxl, 1);
+    }
+  }
+}

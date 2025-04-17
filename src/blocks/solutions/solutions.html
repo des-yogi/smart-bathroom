@@ -1,0 +1,125 @@
+<!--DEV
+@ @include('blocks/solutions/solutions.html')
+-->
+
+<article class="container  block-m  solutions">
+  <div class="solutions__header">
+    <h2 class="h3 solutions__title">All-in-One Bathroom Renovation Solutions</h2>
+    <p class="display-2">Designed for the Discerning. Crafted for the Exceptional</p>
+    <p class="h4  solutions__intro">
+      <span>At Smart Bathrooms Renovation we do full renovation service that transforms your vision into a refined stress-free reality</span>
+    </p>
+  </div>
+
+  <div class="row  solutions__row">
+    <div class="solutions__card-col">
+      @@include('../../blocks/solution-card/solution-card.html', {
+        "icon": "palette",
+        "title": "Design Excellence:",
+        "descr": "It’s about imposing ideas but guiding them. You are the artist; we assist in harmonizing colours and textures to reflect your personal style without compromise."
+      })
+    </div>
+
+    <div class="solutions__card-col">
+      @@include('../../blocks/solution-card/solution-card.html', {
+        "icon": "bath",
+        "title": "Curated Material Selection:",
+        "descr": "We care about the environment footprint and a big dollar saving through smart and efficient product selection."
+      })
+    </div>
+
+    <div class="solutions__card-col">
+      @@include('../../blocks/solution-card/solution-card.html', {
+        "icon": "checklist",
+        "title": "Precision Execution & Project Management:",
+        "descr": "Our elite team handles everything from concept to completion."
+      })
+    </div>
+
+    <div class="solutions__card-col">
+      @@include('../../blocks/solution-card/solution-card.html', {
+        "icon": "harmony",
+        "title": "Aesthetic & Intellectual Harmony:",
+        "descr": "Inspired by timeless world class architecture and modern luxury, our concept in design creates a space where inspiration and relaxation coexist."
+      })
+    </div>
+  </div>
+
+  <div class="row  solutions__form-wrapper">
+    <div class="solutions__form-col">
+      <form class="contact-form" action="#" method="post">
+
+        <label class="field-text">
+          <span class="field-text__name">Name</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" name="name" value="">
+            <span class="field-text__help-text" data-error="name"></span>
+          </span>
+        </label>
+
+        <label class="field-text">
+          <span class="field-text__name">Email (*)</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="email" name="email" value="">
+            <span class="field-text__help-text" data-error="email"></span>
+          </span>
+        </label>
+
+        <label class="field-text">
+          <span class="field-text__name">Phone</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="tel" name="tel" value="">
+            <span class="field-text__help-text" data-error="tel"></span>
+          </span>
+        </label>
+
+        <label class="field-text">
+          <span class="field-text__name">Your message</span>
+          <span class="field-text__input-wrap">
+            <textarea class="field-text__input" name="message" rows="4"></textarea>
+            <span class="field-text__help-text" data-error="message"></span>
+          </span>
+        </label>
+
+        <div class="field-actions  field-actions__agreement">
+          <!-- <div class="field-actions__text">* — обязательные поля</div> -->
+          <div class="field-checkbox">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+              <span class="field-checkbox__name-text">I agree to the processing of personal data in accordance with the <a href="#">Privacy Policy</a></span>
+            </label>
+          </div>
+
+          <button class="btn  solutions__submit" type="submit"><span>Submit</span></button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="solutions__img-col">
+      <div class="solutions__img">
+        <picture>
+          <source srcset="img/sbr-showcase.webp,
+                          img/sbr-showcase.webp 2x" media="(min-width: 1440px)" type="image/webp">
+          <source srcset="img/sbr-showcase.jpg,
+                          img/sbr-showcase.jpg 2x" media="(min-width: 1440px)">
+          <!-- 508x638, 762x957 2x -->
+          <source srcset="img/sbr-showcase.webp,
+                          img/sbr-showcase.webp 2x" media="(min-width: 1280px)" type="image/webp">
+          <source srcset="img/sbr-showcase.jpg,
+                          img/sbr-showcase.jpg 2x" media="(min-width: 1280px)">
+          <!-- 592x640, 888x960 2x -->
+          <source srcset="img/sbr-showcase.webp,
+                          img/sbr-showcase.webp 2x" media="(min-width: 768px)" type="image/webp">
+          <source srcset="img/sbr-showcase.jpg,
+                          img/sbr-showcase.jpg 2x" media="(min-width: 768px)">
+          <!-- 552x640, 828x960 2x -->
+          <source srcset="img/sbr-showcase.webp" media="(min-width: 300px)" type="image/webp">
+          <source srcset="img/sbr-showcase.jpg" media="(min-width: 300px)">
+          <!-- 735x400 -->
+          <img src="img/sbr-showcase.jpg" alt="Showcase SBR" width="762" height="957" loading="lazy">
+        </picture>
+      </div>
+    </div>
+  </div>
+</article>

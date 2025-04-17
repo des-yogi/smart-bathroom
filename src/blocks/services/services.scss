@@ -1,0 +1,44 @@
+.services {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 112px;
+    }
+  }
+
+  &__header-col {
+    @include col(xs, 12);
+    //@include col(md, 6);
+    @include col-offset(xxl, 2);
+    @include col(xxl, 8, $grid-columns, 32px);
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__intro {
+    margin: 0;
+    line-height: inherit;
+    //text-wrap: pretty;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 60px 0;
+
+    @media (min-width: $screen-xxl) {
+      gap: 112px 0;
+    }
+  }
+}

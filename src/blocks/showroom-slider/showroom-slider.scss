@@ -1,9 +1,22 @@
-// В этом файле должны быть стили для БЭМ-блока showroom-slider, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .showroom-slider {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__img {
+    border-radius: $border-radius--img;
+
+    &:hover,
+    &:focus {
+
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      transition: transform $transition-time;
+    }
+  }
 }
