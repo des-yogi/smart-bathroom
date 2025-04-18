@@ -1,0 +1,129 @@
+.service-nav {
+  padding: 12px 0 24px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__list {
+    position: relative;
+    width: 100%;
+    //height: 100%;
+    min-height: 270px;
+    padding: 0;
+    list-style: none;
+    background: linear-gradient(to right, $block-bg 220px, $white 220px);
+
+    ul {
+      padding: 0;
+      list-style: inherit;
+    }
+  }
+
+  &__item {
+    width: 220px;
+    padding-top: 8px;
+
+    &:first-child {
+      padding-top: 24px;
+    }
+
+    &.active {
+
+      #{$block-name}__link {
+        color: $link-color--hover;
+        text-decoration: underline;
+      }
+    }
+
+    &--single {
+
+      #{$block-name}__sublist {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
+
+  &__item-lvl2 {
+    width: auto;
+    margin-bottom: 8px;
+
+    &.active {
+
+      #{$block-name}__link-lvl2 {
+        color: $link-color--hover;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__link,
+  &__link-lvl2 {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 !important;
+    color: inherit;
+    hyphens: none;
+    word-wrap: normal;
+  }
+
+  &__link {
+    padding: 12px 10px 12px 24px;
+    margin-top: 10px;
+    //font-size: 18px;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+
+      & + ul {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
+
+  &__link-lvl2 {
+    padding: 10px;
+    line-height: 1.2em;
+    //min-height: 44px;
+  }
+
+  &__sublist {
+    position: absolute;
+    top: 0;
+    left: 219px;
+    width: calc(100% - 220px);
+    height: 100%;
+    padding-top: 12px !important;
+    padding-left: 12px !important;
+    column-count: 3;
+    column-gap: 16px;
+    column-fill: balance;
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $transition-time;
+
+    @media (min-width: 1200px) {
+      padding-top: 30px !important;
+      padding-left: 20px !important;
+    }
+
+    @media (min-width: $screen-xxl) {
+      padding-top: 30px !important;
+      padding-left: 20px !important;
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}

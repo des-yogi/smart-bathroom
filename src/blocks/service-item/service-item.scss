@@ -47,6 +47,16 @@
 
   &__img-wrapper {
     position: relative;
+
+    &:has(#{$block-name}__wrapper-link:hover),
+    &:has(#{$block-name}__wrapper-link:focus) {
+
+      #{$block-name}__link-btn {
+        color: $text-color;
+        background-color: $blue-light;
+        border-color: $blue-light;
+      }
+    }
   }
 
   &__header {
