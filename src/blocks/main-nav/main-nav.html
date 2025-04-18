@@ -1,61 +1,212 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/main-nav/main-nav.html')
+-->
 
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
+<div class="main-nav__wrapper">
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul class="main-nav__list">
+      <li class="main-nav__item  main-nav__item--active">
+        <a href="#" class="main-nav__link">
+          Catalogue
+        </a>
+      </li>
+      <li class="main-nav__item  active">
+        <a href="#" class="main-nav__link">
+          AI Model
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          Portfolio
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          Blog
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          FAQ
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          About Us
+        </a>
+      </li>
+    </ul>
+  </nav>
 
+  <nav class="service-nav" aria-label="Advanced service navigation">
+<!--     <div class="row  service-nav__row">
+      <div class="service-nav__nav-col"></div>
+      <div class="service-nav__content-col"></div>
+    </div> -->
+    <ul class="service-nav__list">
+      <li class="service-nav__item  active">
+        <!-- Add if single item only - service-nav__item--single -->
+        <a href="#" class="service-nav__link">Bathroom Renovation</a>
 
-
-<nav id="main-nav" class="main-nav" role="navigation">
-  <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
-  <ul class="main-nav__list">
-    <li class="main-nav__item  main-nav__item--active">
-      <a href="" class="main-nav__link">
-        Страницы
-      </a>
-      <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-        <ul class="main-nav__list  main-nav__list--lvl-2">
-          <li class="main-nav__item  main-nav__item--lvl-2">
-            <a href="" class="main-nav__link  main-nav__link--lvl-2">
-              Контакты
-            </a>
+        <ul class="service-nav__sublist">
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Condo Bathroom</a>
           </li>
-          <li class="main-nav__item  main-nav__item--lvl-2">
-            <a href="" class="main-nav__link  main-nav__link--lvl-2">
-              Услуги
-            </a>
-            <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
-              <ul class="main-nav__list  main-nav__list--lvl-3">
-                <li class="main-nav__item  main-nav__item--lvl-3">
-                  <a href="" class="main-nav__link  main-nav__link--lvl-3">
-                    Вёрстка HTML-CSS
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-3">
-                  <a href="" class="main-nav__link  main-nav__link--lvl-3">
-                    Стриптиз
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <li class="service-nav__item-lvl2  active">
+            <a href="#" class="service-nav__link-lvl2">Accessible Senior Bathroom</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Small Bathroom</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Basement Bathroom</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Master Bathroom</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Guest Bathroom</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Partial Bathroom Renovation</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Full Bathroom Renovation</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Product Selection Assistance</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Modern Bathroom</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Bathroom Renovation Cost</a>
           </li>
         </ul>
-      </div>
-    </li>
-    <li class="main-nav__item">
-      <a href="https://github.com/nicothin/NTH-start-project" class="main-nav__link">
-        Репозиторий
-      </a>
-    </li>
-    <li class="main-nav__item">
-      <a href="http://nicothin.pro/" class="main-nav__link">
-        Сайт автора
-      </a>
-    </li>
-  </ul>
-</nav>
+      </li>
 
--->
+      <li class="service-nav__item">
+        <a href="#" class="service-nav__link">Kitchen Renovation</a>
+
+        <ul class="service-nav__sublist">
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 1</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 2</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 3</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 4</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 5</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 6</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 7</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 8</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 9</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 10</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 11</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="service-nav__item">
+        <a href="#" class="service-nav__link">Condo Renovation</a>
+
+        <ul class="service-nav__sublist">
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 1</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 2</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 3</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 4</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 5</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 6</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 7</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 8</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 9</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 10</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 11</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="service-nav__item">
+        <a href="#" class="service-nav__link">Home Renovation</a>
+
+        <ul class="service-nav__sublist">
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 1</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 2</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 3</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 4</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 5</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 6</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 7</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 8</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 9</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 10</a>
+          </li>
+          <li class="service-nav__item-lvl2">
+            <a href="#" class="service-nav__link-lvl2">Menu item 11</a>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </nav>
+</div>
+
+

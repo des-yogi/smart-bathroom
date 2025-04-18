@@ -77,6 +77,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px 32px;
+
+    & > * {
+      min-width: 216px;
+    }
   }
 
   &__img {
