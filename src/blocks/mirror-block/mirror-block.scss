@@ -151,5 +151,16 @@
       @include col-offset(xxl, 0);
       @include col(xxl, 5, $grid-columns, 32px);
     }
+
+    #{$block-name}__img {
+
+      &::before {
+
+        @media (min-width: $screen-xxl) {
+          right: 32px;
+          left: initial;
+        }
+      }
+    }
   }
 }
