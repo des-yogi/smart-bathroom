@@ -1,10 +1,10 @@
 (function(){
   const brands = new Swiper('.brand-slider__container', {
-    speed: 500,
+    speed: 400,
     spaceBetween: 32,
     slidesPerView: "auto",
     autoplay: {
-      delay: 2500,
+      delay: 2000,
       pauseOnMouseEnter: true,
     },
     loop: true,
