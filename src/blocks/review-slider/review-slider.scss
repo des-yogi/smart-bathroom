@@ -4,6 +4,10 @@
 
   &__container {
 
+    @media (max-width: $screen-md - 1) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
 
   &__header {
@@ -13,6 +17,11 @@
     gap: 20px 0;
     margin-bottom: 40px;
     text-align: center;
+
+    @media (max-width: $screen-md - 1) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__header-inner {
@@ -34,7 +43,7 @@
   &__slide {
     display: flex;
     align-items: center;
-    width: calc(100% - 32px) !important;
+    //width: calc(100% - 32px) !important;
     max-width: 454px !important;
     transition: all $transition-time ease-in-out;
 
