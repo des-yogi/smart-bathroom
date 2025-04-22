@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const review = new Swiper('.review-slider__container', {
     speed: 400,
+    slidesPerView: 1,
     spaceBetween: 16,
-    slidesPerView: 'auto',
     centeredSlides: true,
     initialSlide: middleSlideIndex,
     rewind: true,

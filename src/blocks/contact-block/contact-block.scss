@@ -36,7 +36,6 @@
     }
   }
 
-
   &__inner {
     display: flex;
     flex-direction: column;
@@ -45,7 +44,31 @@
     position: relative;
   }
 
-  &__title {
+  &__header {
     margin-bottom: 40px;
+  }
+
+  &__title {
+    margin: 0 !important;
+  }
+
+  &__intro {
+    margin: 40px 0 0;
+    text-align: center;
+
+    &:has(p:empty) {
+      display: none;
+    }
+
+    p {
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
