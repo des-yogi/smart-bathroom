@@ -21,6 +21,7 @@
   &__menu-item {
     flex: 1 1;
     flex-basis: calc(50% - 8px);
+    margin-bottom: 0;
 
     &.active {
 
@@ -54,6 +55,7 @@
   }
 
   &__menu-ext-item {
+    margin-bottom: 0;
 
     &.active {
 
@@ -137,6 +139,7 @@
   &__menu-ext-submenu-item {
     display: flex;
     align-items: center;
+    margin-bottom: 0;
 
     //&:nth-last-child(1):nth-child(odd) {
     //  grid-column: 1 / -1; /* Растягиваем на всю ширину */

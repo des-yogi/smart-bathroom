@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>404: Page not found</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>You have JavaScript disabled! We apologize, but this makes it difficult to use this site…</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main>
+
+        <div class="container  error-404">
+
+          <div class="row  error-404__row">
+            <div class="error-404__col">
+              <img src="img/error-404.svg" alt="" width="832" height="442">
+            </div>
+
+            <div class="error-404__text">
+              <h1 class="error-404__title">
+                <span>404</span>
+                <span class="h3">page not found</span>
+              </h1>
+
+              <a href="index.html" class="btn  btn--inverted">
+                <span>Back to Home</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

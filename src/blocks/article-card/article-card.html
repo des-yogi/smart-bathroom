@@ -1,0 +1,25 @@
+<!--DEV
+@ @include('blocks/article-card/article-card.html', {
+  "img": "article-card-img-1",
+  "title": "Bench and Niche in a Shower",
+  "": "",
+})
+-->
+
+<a href="#" class="article-card">
+  <div class="embed-responsive embed-responsive--3-4  article-card__img">
+    <picture>
+      <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+
+      <img src="img/@@img.jpg" alt="Alt" width="584" height="778" loading="lazy">
+    </picture>
+  </div>
+  <div class="article-card__text">
+    <p class="article-card__category">Bathroom</p>
+    <h4 class="article-card__title">@@title</h4>
+    <span class="publishedon">
+      <time datetime="2025-04-11">2025-04-11</time>
+    </span>
+  </div>
+</a>

@@ -1,0 +1,45 @@
+.header-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px 0;
+  position: relative;
+  min-height: 480px;
+  padding: 80px 16px;
+  text-align: center;
+  background-color: $block-bg;
+  background-position: center;
+  background-size: cover;
+  border-radius: $border-radius--img;
+
+  $block-name:                &; // #{$block-name}__element
+
+  @media (min-width: $screen-md) and (max-width: $screen-xxl - 1) {
+    min-height: 400px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($white, 0.8);
+  }
+
+  &__title,
+  &__intro {
+    position: relative;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__intro {
+    max-width: 650px;
+    text-wrap: balance;
+  }
+}

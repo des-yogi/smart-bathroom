@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Our blog</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>You have JavaScript disabled! We apologize, but this makes it difficult to use this site…</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main>
+
+        <div class="container  block-m  blog-page">
+
+          @@include('blocks/header-showcase/header-showcase.html', {
+            "title": "Our Blog",
+            "intro": "<p>Faucets are essential fixtures in bathrooms and kitchens, providing a crucial water supply for various daily activities such as washing hands, cooking, and cleaning</p>",
+            "img": "hero-img"
+          })
+
+          <nav class="blog-page__nav  block-m">
+            <ul class="h4  list-nostyled  blog-page__nav-list">
+              <li class="blog-page__nav-item  active">
+                <a class="blog-page__nav-link">All</a>
+              </li>
+              <li class="blog-page__nav-item">
+                <a href="#" class="blog-page__nav-link">Bathrooms</a>
+              </li>
+              <li class="blog-page__nav-item">
+                <a href="#" class="blog-page__nav-link">Kitchens</a>
+              </li>
+              <li class="blog-page__nav-item">
+                <a href="#" class="blog-page__nav-link">Condos</a>
+              </li>
+              <li class="blog-page__nav-item">
+                <a href="#" class="blog-page__nav-link">Home</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="block-m  blog-page__body">
+            @@include('blocks/blog-item/blog-item.html', {
+              "addClass": "",
+              "img": "vertical-4x3-1",
+              "title": "11 steps you should know before start Budget-Friendly Small Bathroom Remodel",
+              "text": "<p>At Smart Bathrooms Renovation, we stand out by providing design and construction service in the same company. We can see your project from start to finish, carefully planning the process to make sure we have enough time for ordering and organizing every detail for your bathroom remodeling.</p><p>With over 15 years of experience in the renovation industry, we have gained a deep understanding of both the technical and aesthetic aspects of transforming spaces. From initial consultation and design to project execution and final touches.</p>"
+            })
+
+            @@include('blocks/blog-item/blog-item.html', {
+              "addClass": "",
+              "img": "vertical-4x3-2",
+              "title": "How to create a perfect Guest Bathroom",
+              "text": "<p>At Smart Bathrooms Renovation, we stand out by providing design and construction service in the same company. We can see your project from start to finish, carefully planning the process to make sure we have enough time for ordering and organizing every detail for your bathroom remodeling.</p><p>With over 15 years of experience in the renovation industry, we have gained a deep understanding of both the technical and aesthetic aspects of transforming spaces. From initial consultation and design to project execution and final touches.</p>"
+            })
+
+            @@include('blocks/blog-item/blog-item.html', {
+              "addClass": "",
+              "img": "vertical-4x3-1",
+              "title": "Bathroom remodeling",
+              "text": "<p>At Smart Bathrooms Renovation, we stand out by providing design and construction service in the same company. We can see your project from start to finish, carefully planning the process to make sure we have enough time for ordering and organizing every detail for your bathroom remodeling.</p><p>With over 15 years of experience in the renovation industry, we have gained a deep understanding of both the technical and aesthetic aspects of transforming spaces. From initial consultation and design to project execution and final touches.</p>"
+            })
+
+            @@include('blocks/blog-item/blog-item.html', {
+              "addClass": "",
+              "img": "vertical-4x3-2",
+              "title": "How to create a perfect Guest Bathroom",
+              "text": "<p>At Smart Bathrooms Renovation, we stand out by providing design and construction service in the same company. We can see your project from start to finish, carefully planning the process to make sure we have enough time for ordering and organizing every detail for your bathroom remodeling.</p><p>With over 15 years of experience in the renovation industry, we have gained a deep understanding of both the technical and aesthetic aspects of transforming spaces. From initial consultation and design to project execution and final touches.</p>"
+            })
+          </div>
+
+          @@include('blocks/pagination/pagination.html')
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

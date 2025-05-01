@@ -1,0 +1,23 @@
+.expert-talk {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &.blog-item {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .blog-item__link-wrapper {
+    margin-top: 16px;
+    font-weight: 700;
+    font-style: oblique;
+    text-align: right;
+    text-wrap: balance;
+
+    & > * {
+      max-width: 80%;
+      margin-left: auto;
+      hyphens: none;
+    }
+  }
+}

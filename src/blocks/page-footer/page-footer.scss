@@ -49,6 +49,7 @@
 
   &__contact-item {
     gap: 8px 0;
+    margin-bottom: 0;
 
     & > span,
     & > a {
@@ -90,6 +91,7 @@
   }
 
   &__nav-item {
+    margin-bottom: 0;
 
     &.active {
 
@@ -161,9 +163,9 @@
     }
   }
 
-  // &__social-item {
-
-  // }
+  &__social-item {
+    margin-bottom: 0;
+  }
 
   &__social-link {
     display: inline-flex;
