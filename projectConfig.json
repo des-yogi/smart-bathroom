@@ -50,7 +50,19 @@
     "service-areas": [],
     "review-slider": [],
     "portfolio-slider": [],
-    "service-nav": []
+    "service-nav": [],
+    "article": [],
+    "article-card": [],
+    "blog-page": [],
+    "header-showcase": [],
+    "error-404": [],
+    "read-also": [],
+    "read-also-card": [],
+    "contacts": [],
+    "expert-talk": [],
+    "office-map": [],
+    "parking-spots": [],
+    "review-links": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

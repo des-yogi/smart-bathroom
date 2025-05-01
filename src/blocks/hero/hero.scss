@@ -48,9 +48,9 @@
     }
   }
 
-  // &__feature {
-
-  // }
+  &__feature {
+    margin-bottom: 0;
+  }
 
   &__text {
 
@@ -85,12 +85,16 @@
 
   &__img {
     width: 100%;
-    height: 230px;
+    height: 300px;
     overflow: hidden;
     background-color: $block-bg;
     border-radius: $border-radius--img;
 
     @media (min-width: $screen-md) {
+      height: 400px;
+    }
+
+    @media (min-width: $screen-xxl) {
       height: 480px;
     }
 

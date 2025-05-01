@@ -1,0 +1,40 @@
+.read-also {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    gap: 16px 0;
+    margin-bottom: 40px;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xxl, 6, $grid-columns, 32px);
+    display: flex;
+    align-items: center;
+
+    &--right {
+      justify-content: flex-end;
+    }
+  }
+
+  &__pre-title {
+    max-width: 280px;
+    text-align: right;
+    text-wrap: balance;
+
+    @media (min-width: $screen-xxl) {
+      max-width: 320px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0 !important;
+    font-size: 72px;
+  }
+
+  &__row {
+    gap: 16px 0;
+  }
+}

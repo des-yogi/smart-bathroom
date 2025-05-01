@@ -1,0 +1,81 @@
+.parking-spots {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    margin-top: 0 !important;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 60px 0;
+
+    @media (min-width: $screen-md) {
+      gap: 40px 0;
+    }
+  }
+
+  &__item {
+    gap: 20px 0;
+    margin-bottom: 0;
+
+    &:nth-child(odd) {
+
+      #{$block-name}__item-title-col {
+        @include col-offset(md, 2);
+        @include col-offset(xxl, 2);
+
+        @media (min-width: $screen-md) {
+          order: 1;
+          text-align: initial;
+        }
+      }
+
+      #{$block-name}__item-img-col {
+        @include col-offset(md, 0);
+        @include col-offset(xxl, 0);
+      }
+    }
+  }
+
+  &__item-title-col {
+    @include col(xs, 12);
+    @include col(md, 5);
+    @include col(xxl, 5, $grid-columns, 32px);
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: right;
+    }
+  }
+
+  &__item-img-col {
+    @include col(xs, 12);
+    @include col-offset(md, 2);
+    @include col(md, 5);
+    @include col-offset(xxl, 2);
+    @include col(xxl, 5, $grid-columns, 32px);
+  }
+
+  &__item-title {
+    margin: 0;
+  }
+
+  &__item-img {
+    border-radius: $border-radius--img;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

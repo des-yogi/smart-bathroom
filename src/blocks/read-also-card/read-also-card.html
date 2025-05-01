@@ -1,0 +1,34 @@
+<!--DEV
+@ @include('blocks/read-also-card/read-also-card.html', {
+  "img": "read-also-1",
+  "title": "Bathroom"
+})
+-->
+
+<a href="#" class="read-also-card">
+  <div class="embed-responsive embed-responsive--3-2  read-also-card__img">
+    <picture>
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1366px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1366px)">
+      <!-- 616x411, 930x620 2x -->
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1280px)">
+      <!-- 600x400, 900x600 2x -->
+      <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+      <!-- 825x550 -->
+      <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+      <!-- 675x450 -->
+      <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+      <!-- 570x380 -->
+      <img src="img/@@img.jpg" alt="Alt" width="1232" height="766" loading="lazy">
+    </picture>
+  </div>
+  <p class="h2  read-also-card__title">@@title</p>
+</a>

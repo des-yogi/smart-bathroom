@@ -1,0 +1,41 @@
+.review-links {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    @media (min-width: $screen-md) {
+      gap: 40px;
+    }
+  }
+
+  &__link {
+    flex: 0 0;
+    flex-basis: auto;
+    display: inline-flex;
+    width: auto;
+    height: 40px;
+
+    @media (min-width: $screen-md) {
+      height: 60px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      height: 80px;
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}

@@ -21,6 +21,7 @@
   &__item {
     width: 220px;
     padding-top: 8px;
+    margin: 0;
 
     &:first-child {
       padding-top: 24px;
@@ -46,7 +47,7 @@
 
   &__item-lvl2 {
     width: auto;
-    margin-bottom: 8px;
+    //margin-bottom: 8px;
 
     &.active {
 

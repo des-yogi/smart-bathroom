@@ -3,6 +3,11 @@
   padding-bottom: 40px;
   background-color: $block-bg;
 
+  @media (min-width: $screen-xxl) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   $block-name:                &; // #{$block-name}__element
 
   &__row {
@@ -22,14 +27,17 @@
     @include col(md, 6);
     @include col-offset(xxl, 1);
     @include col(xxl, 5, $grid-columns, 32px);
+  }
 
+  &__text-col,
+  &__img-col {
     display: flex;
     align-items: center;
   }
 
-  &__text-wrapper {
+  // &__text-wrapper {
 
-  }
+  // }
 
   &__title {
     margin-bottom: 20px;

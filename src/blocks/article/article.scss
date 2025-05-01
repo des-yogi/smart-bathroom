@@ -1,0 +1,130 @@
+.article {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    gap: 40px 0;
+    margin-bottom: 60px;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__header-text-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xxl, 7, $grid-columns, 32px);
+  }
+
+  &__header-img-col {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 5);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 4, $grid-columns, 32px);
+  }
+
+  // &__header-text {
+
+  // }
+
+  &__category,
+  &__title {
+    margin-top: 0;
+    margin-bottom: 28px;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  // &__title {
+
+  // }
+
+  &__pub-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  &__slogan {
+    margin-top: 28px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: right;
+
+    @media (min-width: $screen-xxl) {
+      margin-top: 40px;
+    }
+  }
+
+  &__header-img {
+    border-radius: $border-radius--img;
+
+    img {
+      object-fit: cover;
+      object-position: center ;
+    }
+  }
+
+  // &__body {
+
+  // }
+
+  &__content-block {
+
+    img {
+      display: block;
+      max-height: 620px;
+      margin: 30px auto;
+      border-radius: $border-radius--img;
+
+      @media (min-width: $screen-xxl) {
+        margin: 40px auto;
+      }
+    }
+  }
+
+  &__content-col {
+    @include col(xs, 12);
+    @include col(md, 7);
+    @include col(xxl, 8, $grid-columns, 32px);
+  }
+
+  &__aside-col {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 4);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 3, $grid-columns, 32px);
+  }
+
+  &__aside {
+    position: sticky;
+    top: -1px;
+    padding-top: 40px;
+    border-top: 1px solid $border-color;
+  }
+
+  &__aside-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  &__aside-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+  }
+
+  &__aside-nav-item {
+    margin-bottom: 0;
+  }
+
+  &__aside-nav-link {
+    line-height: 1.2;
+  }
+}

@@ -1,14 +1,54 @@
 <!--DEV
 
-Для использования этого файла как шаблона:
-
-@ @include('blocks/blog-item/blog-item.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="blog-item">content</div>
+@ @include('blocks/blog-item/blog-item.html', {
+  "addClass": "blog-item--reversed",
+  "img": "vertical-4x3-1",
+  "title": "11 steps you should know before start Budget-Friendly Small Bathroom Remodel",
+  "text": "<p>Bathroom renovation is one of the oldest and perhaps most popular and frequently ordered renovation services in human history. The bathroom is an integral part of our lives, where we find peace and privacy and stay with ourselves up and get ready to go out. That is why it is so important to have a clean, functional and well-organized bathroom.</p><p>With over 15 years of experience in the renovation industry, we have gained a deep understanding of both the technical and aesthetic aspects of transforming spaces. From initial consultation and design to project execution and final touches.</p><p>Smart investment in renovation will protect your family and last a lifetime.</p>"
+})
 
 -->
+
+<section class="blog-item  @@addClass">
+  <div class="row  blog-item__row">
+
+    <div class="blog-item__img-col">
+      <div class="blog-item__img-wrapper">
+        <div class="embed-responsive embed-responsive--3-4  blog-item__img">
+          <picture>
+            <source srcset="img/@@img.webp" media="(min-width: 1440px)" type="image/webp">
+            <source srcset="img/@@img.jpg" media="(min-width: 1440px)">
+            <!-- 508x677, 762x1016 -->
+            <source srcset="img/@@img.webp" media="(min-width: 1200px)" type="image/webp">
+            <source srcset="img/@@img.jpg" media="(min-width: 1200px)">
+            <!-- 640x853, 960x1280 -->
+            <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+            <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+            <!-- 552x736, 828x1104 -->
+            <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+            <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+            <!-- 672x896 -->
+            <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+            <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+            <!-- 490x653 -->
+            <img src="img/@@img.jpg" alt="Alt" width="508" height="678" loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-item__text-col">
+      <div class="blog-item__text">
+        <h2 class="h3  blog-item__title">@@title</h2>
+        @@text
+
+        <div class="blog-item__link-wrapper">
+          <a href="#" class="blog-item__link">
+            <span>Read More</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
