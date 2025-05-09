@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Project page</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>You have JavaScript disabled! We apologize, but this makes it difficult to use this site…</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main>
+
+        <div class="container  block-m">
+          @@include('blocks/header-showcase/header-showcase.html', {
+            "title": "Dramatic upgrade for En-suite bathroom that provides not only modern look but smart technologies",
+            "intro": "<p>Bathroom Renovation — Small Bathroom Renovation</p>",
+            "img": "hero-img"
+          })
+        </div>
+
+        <section class="container  block-m  portfolio-slider">
+          <h2 class="visually-hidden">Before and After Comparison</h2>
+          <div class="swiper-slide  portfolio-slider__slide">
+
+            <div class="row  portfolio-slider__row-compare">
+
+              <div class="portfolio-slider__img-col">
+                @@include('blocks/before-after/before-after.html', {
+                  "imgBefore": "1-before-735w",
+                  "imgAfter": "1-after-735w"
+                })
+              </div>
+
+              <div class="portfolio-slider__text-col">
+                <div class="portfolio-slider__text">
+                  <p>The transformation from small, dark space into a bright, cozy area has created truly inviting atmosphere. The new design combines a spa-like relaxation zone with a well-lit, specious shower room for daily routines. Incorporating modern technologies, such as</p>
+                  <p>The transformation from small, dark space into a bright, cozy area has created truly inviting atmosphere. The new design combines a spa-like relaxation zone with a well-lit, specious shower room for daily routines. Incorporating modern technologies</p>
+                  <p>The transformation from small, dark space into a bright, cozy area has created truly inviting atmosphere.</p>
+
+                  <ul>
+                    <li>a washlet bidet with a heated seat</li>
+                    <li>an LED mirror</li>
+                    <li>a noiseless exhaust fan</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        @@include('blocks/project-gallery/project-gallery.html')
+
+        @@include('blocks/customer-feedback/customer-feedback.html')
+
+        @@include('blocks/product-gallery/product-gallery.html')
+
+        @@include('blocks/brand-slider/brand-slider.html')
+
+        @@include('blocks/our-blog/our-blog.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

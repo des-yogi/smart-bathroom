@@ -1,0 +1,43 @@
+<!--DEV
+@ @include('blocks/customer-feedback/customer-feedback.html')
+-->
+
+<article class="container  block-m  customer-feedback">
+  <h2 class="display-2  customer-feedback__title">Customer Feedback</h2>
+
+  <div class="row  customer-feedback__row">
+
+    <div class="customer-feedback__col">
+      <div class="embed-responsive  embed-responsive--3-4  customer-feedback__img">
+        <picture>
+          <source srcset="img/vertical-4x3-1.webp" media="(min-width: 1440px)" type="image/webp">
+          <source srcset="img/vertical-4x3-1.jpg" media="(min-width: 1440px)">
+          <!-- 508x677, 762x1016 -->
+          <source srcset="img/vertical-4x3-1.webp" media="(min-width: 1200px)" type="image/webp">
+          <source srcset="img/vertical-4x3-1.jpg" media="(min-width: 1200px)">
+          <!-- 640x853, 960x1280 -->
+          <source srcset="img/vertical-4x3-1.webp" media="(min-width: 1024px)" type="image/webp">
+          <source srcset="img/vertical-4x3-1.jpg" media="(min-width: 1024px)">
+          <!-- 552x736, 828x1104 -->
+          <source srcset="img/vertical-4x3-1.webp" media="(min-width: 480px)" type="image/webp">
+          <source srcset="img/vertical-4x3-1.jpg" media="(min-width: 480px)">
+          <!-- 672x896 -->
+          <source srcset="img/vertical-4x3-1.webp" media="(min-width: 300px)" type="image/webp">
+          <source srcset="img/vertical-4x3-1.jpg" media="(min-width: 300px)">
+          <!-- 490x653 -->
+          <img src="img/vertical-4x3-1.jpg" alt="Alt" width="508" height="678" loading="lazy">
+        </picture>
+      </div>
+    </div>
+
+    <div class="customer-feedback__col">
+      @@include('../../blocks/review-card/review-card.html', {
+        "ava": "ava",
+        "title": "Anna Gafiyatullina",
+        "rating": "4",
+        "text": "<p>When we decided it was time to update our bathroom, we went all in with a full remodeling project, and we couldn't be happier with the results. From start to finish, the experience was smooth and satisfying.</p><p>Smart Bathrooms approached the project with professionalism and expertise. They listened attentively to our ideas and needs, offering valuable suggestions along the way. Communication was excellent, with regular updates on the progress and any adjustments that needed to be made.</p>"
+      })
+    </div>
+
+  </div>
+</article>

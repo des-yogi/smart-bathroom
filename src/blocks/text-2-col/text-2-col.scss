@@ -19,5 +19,9 @@
 
   &__text {
     line-height: inherit;
+
+    p {
+      text-wrap: pretty;
+    }
   }
 }
