@@ -1,0 +1,30 @@
+.project-gallery {
+
+  $block-name:                &; // #{$block-name}__element
+
+  //&__title {
+  //}
+
+  &__row {
+    gap: 16px 0;
+
+    @media (min-width: $screen-xxl) {
+      gap: 32px 0;
+    }
+  }
+
+  &__col {
+    @include col(xs, 6);
+    @include col(md, 4);
+    @include col(xxl, 3, $grid-columns, 32px);
+  }
+
+  &__img {
+    border-radius: $border-radius--img;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

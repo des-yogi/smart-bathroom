@@ -96,30 +96,9 @@ window.addEventListener('resize', () => {
 
 })();
 
-// Если на проекте jQuery
-// $( document ).ready(function() {
-//   // code
-// });
-
-// Изоляция без jQuery
 // (function(){
 //   // code
 // }());
-
-// На проекте нет jQuery, но хочется $( document ).ready...
-// function ready(fn) {
-//   if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-//     fn();
-//   } else {
-//     document.addEventListener('DOMContentLoaded', fn);
-//   }
-// }
-//
-// ready(function(){
-//   // code
-// });
-
-
 
 // $(document).ready(function(){
 //   if(window.matchMedia('(min-width: 1366px)').matches){
@@ -131,26 +110,8 @@ window.addEventListener('resize', () => {
 //   return false;
 // });
 
-/*(function () {
-  //const agreementElems = document.querySelectorAll('.contacts__agreement');
-  const agreementElems = document.querySelectorAll('[class$="__agreement"]');
-
-  for (let i = 0; i < agreementElems.length; i++) {
-    let agreementElem = agreementElems[i];
-    if (!agreementElem) return;
-    //const submitBtn = agreementElem.querySelector('.contacts__submit');
-    const submitBtn = agreementElem.querySelector('button[type=submit]');
-    const agreementCheckbox = agreementElem.querySelector('.agreement-field');
-
-    if (agreementCheckbox) {
-      agreementCheckbox.addEventListener('change', function (e) {
-        if (!e.target.checked) {
-          submitBtn.disabled = true;
-        } else {
-          submitBtn.disabled = false;
-        }
-      });
-    }
-  }
-
-})();*/
+(function(){
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    // Your custom options for a specific gallery
+  });
+}());

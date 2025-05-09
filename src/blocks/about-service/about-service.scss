@@ -1,0 +1,77 @@
+.about-service {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    gap: 40px 0;
+  }
+
+  &__main-text-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xxl, 7, $grid-columns, 32px);
+  }
+
+  &__img-col {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 5);
+    @include col-offset(xxl, 1)
+    @include col(xxl, 4, $grid-columns, 32px);
+
+    @media (max-width: $screen-md - 1) {
+      order: -1;
+    }
+  }
+
+  // &__main-text {
+
+  // }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__text {
+
+  }
+
+  &__img {
+    border-radius: $border-radius--img;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__list-row {
+    gap: 16px 0;
+    margin-top: 40px;
+  }
+
+  &__list-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xxl, 6, $grid-columns, 32px);
+  }
+
+  &__list-wrapper {
+    padding: 20px;
+    background: linear-gradient(to bottom, $block-bg 60%, transparent 100%);
+
+    @media (min-width: $screen-xxl) {
+      padding: 32px 40px;
+    }
+  }
+
+  // &__list {
+
+  // }
+
+  &__list-title {
+    margin: 0 0 20px !important;
+  }
+}
+
+

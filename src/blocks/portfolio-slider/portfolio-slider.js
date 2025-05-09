@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
+  initBeforeAfterSliders(); // Запуск при загрузке страницы — работает и вне Swiper
+
   // Функция инициализации всех "До и После" слайдеров
   function initBeforeAfterSliders() {
     const sliders = document.querySelectorAll('.swiper-slide .before-after-wrapper');

@@ -460,6 +460,48 @@ a {
     //   }
     // }
   }
+
+  .swiper-button-disabled {
+
+    &::after {
+      background-color: $white !important;
+    }
+  }
+}
+
+.list-decor {
+  list-style: none;
+  padding-left: 36px;
+  margin: 1.1em 0 !important;
+  font-weight: 700;
+
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -36px;
+      width: 20px;
+      height: 20px;
+      background-color: $bullet-color;
+      border-radius: 50%;
+
+      @media (min-width: $screen-xxl) {
+        top: 2px;
+      }
+    }
+  }
+
+  li + li {
+    margin-top: 8px;
+  }
 }
 
 .text-only {

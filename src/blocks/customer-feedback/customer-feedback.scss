@@ -1,0 +1,31 @@
+.customer-feedback {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    text-align: center;
+  }
+
+  &__row {
+    gap: 16px 0;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xxl, 5, $grid-columns, 32px);
+
+    &:first-child {
+      @include col-offset(xxl, 1);
+    }
+  }
+
+  &__img {
+    border-radius: $border-radius--img;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

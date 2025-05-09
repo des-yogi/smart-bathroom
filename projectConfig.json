@@ -62,7 +62,14 @@
     "expert-talk": [],
     "office-map": [],
     "parking-spots": [],
-    "review-links": []
+    "review-links": [],
+    "services-slider": [],
+    "table-expandable": [],
+    "about-service": [],
+    "gallery-2row": [],
+    "project-gallery": [],
+    "customer-feedback": [],
+    "product-gallery": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

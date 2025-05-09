@@ -1,0 +1,247 @@
+<!--DEV
+@ @include('blocks/table-expandable/table-expandable.html')
+-->
+
+<div class="table-expandable">
+  <div id="tableWrapper" class="table-mobile-scroll"
+       data-collapsed-height="500"
+       role="region"
+       aria-hidden="true"
+       aria-labelledby="tableHeading"
+  >
+    <table class="table-expandable__item">
+      <thead>
+        <tr>
+          <th id="tableHeading">Comparison Chart</th>
+          <th>Powder Room</th>
+          <th>Partial Bathroom</th>
+          <th>Full Bathroom Standard 5’x7’</th>
+          <th>Full Bathroom 5’x7’ Plus Package</th>
+          <th>Large Bathroom 8’x 10’</th>
+          <th>Luxury Bathroom 11’x17’</th>
+          <th>Condo Standard Bathroom</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>Price</th>
+          <td>$5,600</td>
+          <td>$9,600</td>
+          <td>$17,500</td>
+          <td>$19,000</td>
+          <td>$22,500</td>
+          <td>$25,600</td>
+          <td>$19,000</td>
+        </tr>
+        <tr>
+          <th>Demolishing</th>
+          <td>
+            <span class="active"></span>
+          </td>
+          <td>
+            <span class="active"></span>
+          </td>
+          <td>
+            <span class="active"></span>
+          </td>
+          <td>
+            <span class="active"></span>
+          </td>
+          <td>
+            <span class="active"></span>
+          </td>
+          <td>
+            <span class="active"></span>
+          </td>
+          <td>
+            <span class="active"></span>
+          </td>
+        </tr>
+        <tr>
+          <th>Waterproofing shower/tub area</th>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Plumbing installation</th>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Build a niche</th>
+          <td><span></span></td>
+          <td><span></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span></span></td>
+        </tr>
+        <tr>
+          <th>Build a bench</th>
+          <td><span></span></td>
+          <td><span></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span></span></td>
+        </tr>
+        <tr>
+          <th>Preparing walls/floors for tiling</th>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Tiling</th>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Shower area</th>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Tub area</th>
+          <td><span></span></td>
+          <td><span></span></td>
+          <td><span></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span></span></td>
+        </tr>
+        <tr>
+          <th>Toilet installation</th>
+          <td><span class="active"></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Vanity installation</th>
+          <td><span class="active"></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Build recessed cabinet</th>
+          <td><span></span></td>
+          <td><span></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Shower glass installation</th>
+          <td><span></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Painting</th>
+          <td><span class="active"></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Accessories installation</th>
+          <td><span class="active"></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Waste removal</th>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Electrical: Standard (two potlights, vanity light, exhaust fan, upgrade all switches and receptacles)</th>
+          <td><span class="active"></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+        <tr>
+          <th>Electrical: Extended Standard (plus towel warmer, heated floor, smart toilet, LED medicine cabinet)</th>
+          <td><span></span></td>
+          <td><span></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span></span></td>
+          <td><span class="active"></span></td>
+          <td><span class="active"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="row  text-2-col__row">
+    <div class="text-2-col__col">
+      <button id="toggleTableBtn" class="btn" type="button" aria-controls="tableWrapper" aria-expanded="false">
+        <span>Show full table</span>
+      </button>
+    </div>
+    <div class="text-2-col__col">
+      <div class="h5  text-2-col__text">
+        <p>At Smart Bathrooms Renovation, we offer professional bathroom design and 3D rendering services to help with layout and visualization before the project begins. If you are not ordering the package above, there is a chance to get this service alone. Our pricing is transparent and also very depends on the level of detail and customization you require.</p>
+      </div>
+    </div>
+  </div>
+</div>
