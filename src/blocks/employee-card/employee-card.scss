@@ -1,0 +1,62 @@
+.employee-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    gap: 20px 0;
+  }
+
+  &__col-img {
+    @include col(xs, 12);
+    @include col(md, 12);
+    @include col(xxl, 6, $grid-columns, 32px);
+  }
+
+  &__col-text {
+    @include col(xs, 12);
+    @include col(md, 12);
+    @include col(xxl, 6, $grid-columns, 32px);
+  }
+
+  &__img {
+    //flex: 0 0;
+    //flex-basis: clamp(50%, 218px);
+    width: 219px; //291 xxl
+    margin: 0 auto;
+    border-radius: $border-radius--img;
+
+    @media (min-width: $screen-xxl) {
+      width: 292px;
+      margin: 0;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  //&__text {
+    //flex: 1 1;
+    //flex-basis: clamp(290px, 350px, 45%);
+  //}
+
+  &__name,
+  &__position {
+
+    @media (max-width: $screen-xxl - 1) {
+      text-align: center;
+    }
+  }
+
+  &__name {
+    margin: 0 !important;
+  }
+
+  &__position {
+    display: block;
+    margin: 0 0 8px !important;
+    //text-align: center;
+    color: $text-muted;
+  }
+}

@@ -23,13 +23,9 @@
     }
   }
 
-  &__title,
-  &__descr {
-    margin: 0;
-  }
-
   &__title {
     width: 100%;
+    margin: 0 !important;
   }
 
   &__descr {

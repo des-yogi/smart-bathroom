@@ -1,9 +1,12 @@
-// В этом файле должны быть стили для БЭМ-блока gallery-2row, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .gallery-2row {
 
-  $block-name:                &; // #{$block-name}__element
+  $block-name:                &; // #{$block-name}__element\
 
+  &__container {
+    //height: 100%;
+  }
+
+  &__slide {
+    //height: 120px !important; /* на мобилке */
+  }
 }
