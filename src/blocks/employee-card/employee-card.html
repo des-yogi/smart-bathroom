@@ -1,0 +1,43 @@
+<!--DEV
+@ @include('blocks/employee-card/employee-card.html', {
+  "img": "employee-1",
+  "name": "Mikhail Pulyanau",
+  "position": "Mentor",
+  "descr": "<p>is the originator of this concept and served as the primary mentor.</p><p>He is now enjoying retirement.</p>"
+})
+-->
+
+<div class="employee-card">
+  <div class="row  employee-card__row">
+
+    <div class="employee-card__col-img">
+      <div class="embed-responsive  embed-responsive--3-4  employee-card__img">
+        <picture>
+          <source srcset="img/@@img.webp,
+                          img/@@img.webp 2x" media="(min-width: 1440px)" type="image/webp">
+          <source srcset="img/@@img.jpg,
+                          img/@@img.jpg 2x" media="(min-width: 1440px)">
+          <!-- 292x389, 438x584 2x -->
+          <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+          <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+          <!-- 438x584 -->
+          <img src="img/@@img.jpg" alt="Name" width="438" height="584" loading="lazy">
+        </picture>
+      </div>
+    </div>
+
+    <div class="employee-card__col-text">
+      <div class="employee-card__text">
+        <h3 class="employee-card__name">
+          @@name
+          <span class="h3  employee-card__position">@@position</span>
+        </h3>
+        <div class="employee-card_descr">
+          @@descr
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

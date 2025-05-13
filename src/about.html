@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>About Us</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>You have JavaScript disabled! We apologize, but this makes it difficult to use this site…</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main>
+
+        <div class="container  block-m">
+          @@include('blocks/header-showcase/header-showcase.html', {
+            "title": "About us",
+            "intro": "<p>About our company</p>",
+            "img": "hero-img"
+          })
+        </div>
+
+        <!-- insert as article for the page -->
+        @@include('blocks/text-2-col/text-2-col.html', {
+          "title": "We are a proud family-run",
+          "text": "<p>We are a proud family-run business with deep connections in the construction industry, now being third generation. Over the last few decades, our family has been participating in a different range of construction and renovation projects - from residential complexes to cultural landmarks. This legacy and dedication to our traditions has shaped who we are today.</p><p>Those days our passion and focus shifted to smart, innovative, and sustainable bathroom design and execution. We believe the bathroom should be more than just a functional place - it should be a space of wellness, comfort, and beauty.</p><p>That's why we prefer to focus on sustainable, intuitive, organic shapes materials that promote a sense of calm and connection.</p><p>Combining modern technology with thoughtful design, we bring a fresh approach to every project- balancing tradition with forward-thinking solutions for a better, smarter way to live.</p><p>Our vision is to give an opportunity to everyone for the creation of a well-organized, aesthetically pleasing, and comfortable bathroom that is essential for your long-term wellbeing and health.</p>"
+        })
+
+        @@include('blocks/team/team.html')
+
+        @@include('blocks/gallery-2row/gallery-2row.html')
+
+        @@include('blocks/service-areas/service-areas.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

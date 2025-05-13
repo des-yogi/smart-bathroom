@@ -506,6 +506,14 @@ a {
 
 .text-only {
 
+  &__col {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 10);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 10, $grid-columns, 32px);
+  }
+
   &__content {
 
     & > *:first-child {

@@ -22,9 +22,18 @@
   &__img {
     border-radius: $border-radius--img;
 
+    &:hover,
+    &:focus {
+
+      img {
+        transform: scale(1.1);
+      }
+    }
+
     img {
       object-fit: cover;
       object-position: center;
+      transition: transform $transition-time ease;
     }
   }
 }

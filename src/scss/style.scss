@@ -13,7 +13,7 @@
 @import './src/scss/variables.scss';
 @import './src/scss/mixins.scss';
 @import '../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css';
-@import '../../node_modules/swiper/swiper-bundle.css';
+@import '../../node_modules/swiper/swiper-bundle.min.css';
 @import './src/blocks/accordion/accordion.scss';
 @import './src/blocks/breadcrumbs/breadcrumbs.scss';
 @import './src/blocks/btn/btn.scss';
@@ -84,4 +84,6 @@
 @import './src/blocks/project-gallery/project-gallery.scss';
 @import './src/blocks/customer-feedback/customer-feedback.scss';
 @import './src/blocks/product-gallery/product-gallery.scss';
+@import './src/blocks/team/team.scss';
+@import './src/blocks/employee-card/employee-card.scss';
 @import './src/scss/print.scss';

@@ -1,0 +1,18 @@
+.team {
+
+  $block-name:                &; // #{$block-name}__element
+
+  //&__title {
+
+  //}
+
+  &__row {
+    gap: 40px 0;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xxl, 6, $grid-columns, 32px);
+  }
+}

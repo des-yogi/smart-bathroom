@@ -69,7 +69,9 @@
     "gallery-2row": [],
     "project-gallery": [],
     "customer-feedback": [],
-    "product-gallery": []
+    "product-gallery": [],
+    "team": [],
+    "employee-card": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
@@ -81,7 +83,7 @@
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css",
-    "../../node_modules/swiper/swiper-bundle.css"
+    "../../node_modules/swiper/swiper-bundle.min.css"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"

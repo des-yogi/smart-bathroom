@@ -16,7 +16,7 @@
   $block-name:                &; // #{$block-name}__element
 
   &__title {
-    margin: 0;
+    margin: 0 !important;
   }
 
   &__inner {
@@ -46,6 +46,10 @@
       align-items: baseline;
       gap: 0 64px;
     }
+
+    @media (min-width: $screen-xxl) {
+      font-size: 24px;
+    }
   }
 
   &__feature {
@@ -71,6 +75,14 @@
 
   &__slogan {
     margin-bottom: 16px;
+  }
+
+  &__info {
+    margin-bottom: 24px;
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: 40px;
+    }
   }
 
   &__links {

@@ -1,0 +1,47 @@
+<!--DEV
+@ @include('blocks/team/team.html')
+-->
+
+<section class="container  block-m  team">
+  <h2 class="display-2  team__title">Our Team</h2>
+
+  <div class="row  team__row">
+
+    <div class="team__col">
+      @@include('../../blocks/employee-card/employee-card.html', {
+        "img": "employee-1",
+        "name": "Mikhail Pulyanau",
+        "position": "Mentor",
+        "descr": "<p>Is the originator of this concept and served as the primary mentor.</p><p>He is now enjoying retirement.</p>"
+      })
+    </div>
+
+    <div class="team__col">
+      @@include('../../blocks/employee-card/employee-card.html', {
+        "img": "employee-2",
+        "name": "Natallia Pulyanava",
+        "position": "CEO",
+        "descr": "<p>I am the founder of our family business Smart Bathrooms Renovation, where I personally oversee every project - from developing the design concept to quality control at all stages of work. My focus is to make the renovation process as comfortable as possible for you and to achieve a result that is truly impressive. We create bathrooms that combine style, functionality and flawless execution. </p>"
+      })
+    </div>
+
+    <div class="team__col">
+      @@include('../../blocks/employee-card/employee-card.html', {
+        "img": "employee-3",
+        "name": "Oksana Ezerskaya",
+        "position": "CFO",
+        "descr": "<p>I am engaged in operational and financial activities. My focus in the company is to monitor the company'e efficiency and promptly respond to changes. </p>"
+      })
+    </div>
+
+    <div class="team__col">
+      @@include('../../blocks/employee-card/employee-card.html', {
+        "img": "employee-4",
+        "name": "Tim Ezerskiy",
+        "position": "Digital producer",
+        "descr": "<p>As a Digital Producer I am responsible for the visual and digital content for our website and social media channels. I am also monitoring the quality of materials that comply with brand standards.</p>"
+      })
+    </div>
+
+  </div>
+</section>
