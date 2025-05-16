@@ -6,10 +6,10 @@
   //}
 
   &__row {
-    gap: 16px 0;
+    gap: 24px 0;
 
     @media (min-width: $screen-xxl) {
-      gap: 32px 0;
+      gap: 40px 0;
     }
   }
 
@@ -17,6 +17,10 @@
     @include col(xs, 6);
     @include col(md, 4);
     @include col(xxl, 3, $grid-columns, 32px);
+
+    &--catalog {
+      @include col(md, 3);
+    }
   }
 
   &__img {

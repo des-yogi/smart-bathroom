@@ -1,0 +1,40 @@
+<!--DEV
+@ @include('blocks/blog-card-ext/blog-card-ext.html', {
+  "category": "Bathroom ",
+  "title": "How to create a perfect Guest Bathroom"
+})
+-->
+
+<a href="#" class="blog-card-ext">
+  <div class="embed-responsive  embed-responsive--3-4  blog-card-ext__img">
+    <picture>
+      <source srcset="img/vertical-4x3-1.webp,
+                      img/vertical-4x3-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+      <source srcset="img/vertical-4x3-1.jpg,
+                      img/vertical-4x3-1.jpg 2x" media="(min-width: 1440px)">
+      <!-- 292x389, 438x584 2x -->
+      <source srcset="img/vertical-4x3-1.webp,
+                      img/vertical-4x3-1.webp 2x" media="(min-width: 1200px)" type="image/webp">
+      <source srcset="img/vertical-4x3-1.jpg,
+                      img/vertical-4x3-1.jpg 2x" media="(min-width: 1200px)">
+      <!-- 407x543, 610x813 2x -->
+      <source srcset="img/vertical-4x3-1.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/vertical-4x3-1.jpg" media="(min-width: 768px)">
+      <!-- 304x405 -->
+      <source srcset="img/vertical-4x3-1.webp" media="(min-width: 480px)" type="image/webp">
+      <source srcset="img/vertical-4x3-1.jpg" media="(min-width: 480px)">
+      <!-- 384x512 -->
+      <source srcset="img/vertical-4x3-1.webp" media="(min-width: 300px)" type="image/webp">
+      <source srcset="img/vertical-4x3-1.jpg" media="(min-width: 300px)">
+      <!-- 276x368 -->
+      <img src="img/vertical-4x3-1.jpg" alt="Alt" width="610" height="813" loading="lazy">
+    </picture>
+    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+  </div>
+
+  <div class="blog-card-ext__text">
+    <p class="blog-card-ext__category">@@category</p>
+    <h3 class="blog-card-ext__title">@@title</h3>
+    <p class="blog-card-ext__publishedon"><time datetime="2025-04-11">2025-04-11</time></p>
+  </div>
+</a>

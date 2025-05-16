@@ -51,4 +51,19 @@
       }
     }
   }
+
+  &--fixed-width {
+
+    #{$block-name}__item {
+
+      @media (min-width: $screen-md) {
+        table-layout: fixed;
+      }
+
+      td {
+        //text-wrap: balance;
+        text-wrap: pretty;
+      }
+    }
+  }
 }

@@ -21,7 +21,7 @@
 
         <div class="container  block-m">
           @@include('blocks/header-showcase/header-showcase.html', {
-            "title": "Cost of Bathroom Renovation",
+            "title": "Partial Bathroom Renovation",
             "intro": "<p>A short description of the page in a couple of lines</p>",
             "img": "hero-img"
           })
@@ -46,7 +46,9 @@
           </div>
         </section>
 
-        <article class="container  block-m  incut-block  @@addClass">
+        @@include('blocks/preparation-stages/preparation-stages.html')
+
+        <article class="container  block-m  incut-block">
           <div class="row  incut-block__row">
 
             <div class="incut-block__text-col">
@@ -90,6 +92,118 @@
 
           </div>
         </article>
+
+        @@include('blocks/work-stages/work-stages.html')
+
+        <section class="container  block-m  text-2-col">
+          <div class="row  text-2-col__row">
+            <div class="text-2-col__col">
+              <h2 class="display-2  text-2-col__title">Customize your perfect Shower/Bathtub Area</h2>
+            </div>
+            <div class="text-2-col__col">
+              <div class="h5  text-2-col__text">
+                <p>A great bathroom comes with customization options that brings comfort, your values, unique style and reflects your life. Some features might be useful for safety reasons and some bring aesthetic and functionality. The below upgrade options with prices can help you get a clearer idea and better understand how you can create a truly personalized space.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-expandable  table-expandable--fixed-width">
+            <div id="tableWrapper" class="table-mobile-scroll"
+                 data-collapsed-height="500"
+                 role="region"
+                 aria-hidden="true"
+            >
+              <table class="table-expandable__item">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                    <th>Starting price</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Rainfall showerhead</td>
+                    <td>Full coverage with water spa-like experience.</td>
+                    <td>$400+</td>
+                  </tr>
+                  <tr>
+                    <td>Built-in Shower Niche</td>
+                    <td>Extra clean storage right in your shower/tub area for toiletries.</td>
+                    <td>$350+</td>
+                  </tr>
+                  <tr>
+                    <td>Shower Bench</td>
+                    <td>Take it easy while showering, it comes in different shapes and materials. Fully customized.</td>
+                    <td>$400+</td>
+                  </tr>
+                  <tr>
+                    <td>Grab Bars</td>
+                    <td>Safety and accessibility makes the showering experience enjoyable and satisfying.</td>
+                    <td>$300+</td>
+                  </tr>
+                  <tr>
+                    <td>Towel Warmer</td>
+                    <td>Reinvigorate your space and make it warm and cozy with a wide range of towel warmers.</td>
+                    <td>$350+</td>
+                  </tr>
+                  <tr>
+                    <td>Motion Lighting</td>
+                    <td>Energy efficient and hands-free solution.</td>
+                    <td>$300+</td>
+                  </tr>
+
+                  <tr>
+                    <td>Rainfall showerhead</td>
+                    <td>Full coverage with water spa-like experience.</td>
+                    <td>$400+</td>
+                  </tr>
+                  <tr>
+                    <td>Built-in Shower Niche</td>
+                    <td>Extra clean storage right in your shower/tub area for toiletries.</td>
+                    <td>$350+</td>
+                  </tr>
+                  <tr>
+                    <td>Shower Bench</td>
+                    <td>Take it easy while showering, it comes in different shapes and materials. Fully customized.</td>
+                    <td>$400+</td>
+                  </tr>
+                  <tr>
+                    <td>Grab Bars</td>
+                    <td>Safety and accessibility makes the showering experience enjoyable and satisfying.</td>
+                    <td>$300+</td>
+                  </tr>
+                  <tr>
+                    <td>Towel Warmer</td>
+                    <td>Reinvigorate your space and make it warm and cozy with a wide range of towel warmers.</td>
+                    <td>$350+</td>
+                  </tr>
+                  <tr>
+                    <td>Motion Lighting</td>
+                    <td>Energy efficient and hands-free solution.</td>
+                    <td>$300+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="row  text-2-col__row">
+              <div class="text-2-col__col">
+                <button id="toggleTableBtn" class="btn" type="button" aria-controls="tableWrapper" aria-expanded="false">
+                  <span>Show full table</span>
+                </button>
+              </div>
+              <div class="text-2-col__col">
+                <!-- <div class="h5  text-2-col__text">
+                  <p>At Smart Bathrooms Renovation, we offer professional bathroom design and 3D rendering services to help with layout and visualization before the project begins. If you are not ordering the package above, there is a chance to get this service alone. Our pricing is transparent and also very depends on the level of detail and customization you require.</p>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        @@include('blocks/models-available/models-available.html')
 
       </main>
 
