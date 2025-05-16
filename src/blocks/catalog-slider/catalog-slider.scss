@@ -1,0 +1,50 @@
+.catalog-slider {
+
+  $block-name:                &; // #{$block-name}__element
+
+  // &__container {
+
+  // }
+
+  &__slide {
+    width: 156px;
+
+    @media (min-width: $screen-md) {
+      width: 160px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      width: auto;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+
+      #{$block-name}__img img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__img {
+    border-radius: $border-radius--img;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      transition: transform $transition-time;
+    }
+  }
+
+  &__descr {
+    margin: 0 !important;
+  }
+}

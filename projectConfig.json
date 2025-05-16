@@ -71,7 +71,13 @@
     "customer-feedback": [],
     "product-gallery": [],
     "team": [],
-    "employee-card": []
+    "employee-card": [],
+    "preparation-stages": [],
+    "work-stages": [],
+    "models-available": [],
+    "catalog-slider": [],
+    "blog-card-ext": [],
+    "product-info": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
