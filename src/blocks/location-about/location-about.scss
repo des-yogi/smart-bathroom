@@ -1,0 +1,40 @@
+.location-about {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    gap: 40px 0;
+  }
+
+  &__col-img {
+    @include col(xs, 12);
+    @include col(md, 5);
+    @include col(xxl, 5, $grid-columns, 32px);
+  }
+
+  &__col-text {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 6);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 6, $grid-columns, 32px);
+  }
+
+  &__img {
+    position: sticky;
+    top: 20px;
+    border-radius: $border-radius--img;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+
+    & > *:first-child {
+      margin-top: 0;
+    }
+  }
+}

@@ -77,7 +77,12 @@
     "models-available": [],
     "catalog-slider": [],
     "blog-card-ext": [],
-    "product-info": []
+    "product-info": [],
+    "standards-slider": [],
+    "standard-card": [],
+    "issue-card": [],
+    "issues-slider": [],
+    "location-about": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
