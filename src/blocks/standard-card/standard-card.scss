@@ -1,0 +1,30 @@
+.standard-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  padding: 16px;
+  background: linear-gradient(180deg, $grey-light 60%, transparent 100%);
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__img {
+    border-radius: $border-radius--img;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  // &__text {
+
+  // }
+
+  &__title {
+    margin: 0 0 12px;
+  }
+
+  // &__descr {
+
+  // }
+}

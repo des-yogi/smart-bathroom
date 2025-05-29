@@ -1,0 +1,37 @@
+.issue-card {
+  padding: 16px;
+  background: linear-gradient(180deg, $grey-light 60%, transparent 100%);
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid $divider-color;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0 !important;
+  }
+
+  &__nth {
+    font-size: 60px;
+    font-weight: initial;
+    line-height: 1;
+  }
+
+  &__body {
+
+    #{$block-name}__caption {
+      margin-top: 16px;
+      font-weight: 700;
+    }
+  }
+
+  // &__caption {
+  // }
+}
+

@@ -1,0 +1,52 @@
+<!--DEV
+@ @include('blocks/issues-slider/issues-slider.html')
+-->
+
+<section class="container  block-m  issues-slider">
+  <div class="swiper__header  issues-slider__header">
+    <div class="swiper__title  issues-slider__header-inner">
+      <h2 class="display-2  issues-slider__title">issues and their solutions</h2>
+      <div class="issues-slider__intro">
+        <p>To make successful renovations for condo bathrooms, it’s essential to understand the specific criteria, potential constraints, and necessary steps to avoid issues. To help you navigate this process successfully, we’ve provided an overview of common issues and their solutions:</p>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <div class="swiper  issues-slider__container">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide  issues-slider__slide">
+        @@include('../../blocks/issue-card/issue-card.html', {
+          "nth": "1",
+          "title": "Building Regulation and Approvals"
+        })
+      </div>
+
+      <div class="swiper-slide  issues-slider__slide">
+        @@include('../../blocks/issue-card/issue-card.html', {
+          "nth": "2",
+          "title": "Plumbing and Slop Limitation"
+        })
+      </div>
+
+      <div class="swiper-slide  issues-slider__slide">
+        @@include('../../blocks/issue-card/issue-card.html', {
+          "nth": "3",
+          "title": "Building Regulation and Approvals"
+        })
+      </div>
+
+      <div class="swiper-slide  issues-slider__slide">
+        @@include('../../blocks/issue-card/issue-card.html', {
+          "nth": "4",
+          "title": "Plumbing and Slop Limitation"
+        })
+      </div>
+
+    </div>
+  </div>
+</section>

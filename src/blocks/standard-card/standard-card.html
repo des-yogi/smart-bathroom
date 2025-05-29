@@ -1,0 +1,35 @@
+<!--DEV
+@ @include('blocks/standard-card/standard-card.html', {
+  "img": "standards-1",
+  "title": "Heated Floor",
+  "text": "Warm floor adds touch of luxury and comfort to any room, especially the bathroom. Imagine stepping onto a warm surface first thing in the morning instead of a cold. You don't need rugs anymore! Heated floor is also energy efficient."
+})
+-->
+
+<div class="standard-card">
+  <div class="embed-responsive embed-responsive--1-1  standard-card__img">
+    <picture>
+      <source srcset="img/@@img.webp, img/@@img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/@@img.jpg, img/@@img.jpg 2x" media="(min-width: 1280px)">
+        <!-- 284, 430 2x -->
+      <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+        <!-- 520 -->
+      <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+        <!-- 620 -->
+      <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+        <!-- 720 -->
+      <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+        <!-- 525 -->
+      <img src="img/@@img.jpg" alt="@@title" width="720" height="720" loading="lazy">
+    </picture>
+    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+  </div>
+  <div class="standard-card__text">
+    <h3 class="standard-card__title">@@title</h3>
+    <p class="standard-card__descr">@@text</p>
+  </div>
+</div>

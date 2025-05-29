@@ -1,0 +1,27 @@
+.standards-slider {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+
+    @media (min-width: $screen-md) {
+      align-items: flex-end;
+    }
+  }
+
+  &__header-inner {
+
+    @media (min-width: $screen-md) {
+      flex: 1 1;
+      flex-basis: calc(100% - 112px - 32px);
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px !important;
+  }
+
+  // &__intro {
+
+  // }
+}
