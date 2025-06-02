@@ -1,0 +1,39 @@
+.call-us {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  color: $white;
+  background-color: $bullet-color;
+  border-radius: 50%;
+  //box-shadow: 0 3px 8px 0 rgba($black, 0.25);
+  filter: drop-shadow(0 0 10px rgba($black, 0.4));
+  user-select: none;
+  pointer-events: auto;
+  transition: all $transition-time;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $white;
+    background-color: $blue-med;
+  }
+
+  &__wrapper {
+    position: fixed;
+    bottom: 40px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: none;
+
+    @media (min-width: $screen-xl) {
+      bottom: 120px;
+    }
+  }
+}
+

@@ -31,12 +31,21 @@
     margin: 20px 0 !important;
   }
 
+  &__rating {
+    margin-bottom: 20px;
+  }
+
+  &__review-num {
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
   &__add-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 
   &__material,
@@ -44,16 +53,40 @@
     margin: 0;
   }
 
-  // &__sku {
-  // }
+  &__sku {
+    color: $text-muted;
+  }
+
+  &__manufacturer {
+    margin: 0 0 20px;
+  }
 
   // &__text {
   // }
 
-  &__price, {
+  &__price-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 16px;
     margin-top: 20px;
-    font-weight: 500;
+
+    &:has(.new) {
+
+      #{$block-name}__price:not(.new) {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  &__price {
+    margin: 0 !important;
+    font-weight: 700 !important;
     color: $main-color;
+
+    & + & {
+      color: $color-danger;
+    }
   }
 
   &__order {

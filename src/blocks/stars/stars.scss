@@ -1,5 +1,5 @@
 :root {
-  --star-size: 24px;
+  --star-size: 30px;
   --star-color: #c8c8c8;
   --star-background: #4ab1e5;
 }
@@ -10,7 +10,9 @@
 
   --percent: calc(var(--rating) / 5 * 100%);
 
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
   font-size: var(--star-size);
   font-family: $font-family; // make sure ★ appears correctly
   line-height: 1;
@@ -21,5 +23,19 @@
     background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  &__score {
+    font-size: 16px;
+    font-weight: 700;
+    color: $main-color;
+
+    @media (min-width: $screen-xxl) {
+      font-size: 18px;
+    }
+
+    &:empty {
+      display: none;
+    }
   }
 }

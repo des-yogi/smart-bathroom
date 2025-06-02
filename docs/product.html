@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Product page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="MobileOptimized" content="320">
+  <meta name="MobileOptimized" content="320">
   <meta name="format-detection" content="telephone=no">
   <meta name='format-detection' content="date=no">
   <meta name='format-detection' content="address=no">
@@ -27,7 +27,7 @@
   <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/noto-sans-v7-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin> -->
 
-  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
 
 </head>
 
@@ -36,7 +36,7 @@
 
   <div class="page__inner">
 
-    <div class="page__content">
+    <div class="page__content">
 
       <header class="container  page-header">
         <div class="page-header__inner">
@@ -58,15 +58,15 @@
             <img src="img/sbr-horiz.svg" alt="logo" width="302" height="33">
           </a>
 
-          <button id="nav-toggler" class="page-header__menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu">
-            <b class="page-header__menu-btn-text">MENU</b>
+          <button id="nav-toggler" class="page-header__menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu" aria-label="Mobile menu toggler">
+            <b class="page-header__menu-btn-text">MENU</b>
 
             <span class="burger"><span></span></span>
 
           </button>
         </div>
 
-        <div class="collapse  page-header__menu-wrapper" id="collapseMenu">
+        <div class="collapse  page-header__menu-wrapper" id="collapseMenu">
 
           <nav class="mob-nav">
             <ul class="list-nostyled  mob-nav__menu">
@@ -399,7 +399,7 @@
 
 
         </div>
-      </header>
+      </header>
 
       <nav class="container breadcrumbs" aria-label="Breadcrumb">
         <ol class="list-nostyled breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -433,7 +433,7 @@
 
 
 
-      <main>
+      <main>
 
         <article class="container  block-m  product-info">
           <div class="row  product-info__row">
@@ -445,10 +445,20 @@
 
                 <h1 class="h2  product-info__title">Product name</h1>
 
+                <div class="product-info__rating">
+                  <p class="product-info__review-num">362 people left reviews</p>
+                  <div class="stars" style="--rating: 4.5;">
+                    <span class="stars__score">4.5</span>
+                    <p class="visually-hidden">Rating of this product is @@rating out of 5</p>
+                  </div>
+                </div>
+
                 <div class="product-info__add-info">
                   <p class="product-info__material">Material:&ensp;<strong>Acrylic</strong></p>
                   <p class="product-info__sku">SKU#:&ensp;<strong>BO70L/R</strong></p>
                 </div>
+
+                <p class="product-info__manufacturer">Manufacturer:&ensp;<strong>Germany</strong></p>
 
                 <div class="product-info__text">
                   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
@@ -463,7 +473,10 @@
                     <li>Patterned bottom</li>
                   </ul>
 
-                  <p class="h3  product-info__price">200&thinsp;$</p>
+                  <div class="product-info__price-wrapper">
+                    <p class="h3  product-info__price">200&thinsp;$</p>
+                    <p class="h3  product-info__price  new">180&thinsp;$</p>
+                  </div>
                 </div>
 
                 <div class="product-info__order">
@@ -1004,7 +1017,14 @@
 
     </div>
 
-    <div class="page__footer-wrapper">
+    <div class="page__footer-wrapper">
+
+      <div class="container  call-us__wrapper">
+        <a href="tel:+14164817477" class="call-us" title="Call Us">
+          <svg width="32" height="32" role="graphics-symbol"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#phone"></use></svg>
+        </a>
+      </div>
+
 
       <footer class="container  page-footer">
         <div class="page-footer__inner">
@@ -1031,7 +1051,7 @@
                 <span class="h5">306 Eglinton Ave W</span>
               </li>
 
-            </ul>
+            </ul>
 
             <div class="rating">
               <span>
@@ -1106,7 +1126,7 @@
 
           </div>
 
-          <div class="page-footer__copyrights">
+          <div class="page-footer__copyrights">
 
             <section class="copyrights">
               <h3 class="visually-hidden">Copyright and other information</h3>
@@ -1131,6 +1151,7 @@
           </div>
 
         </div>
+
       </footer>
 
     </div>

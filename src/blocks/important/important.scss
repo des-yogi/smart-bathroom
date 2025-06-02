@@ -1,0 +1,51 @@
+.important {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    padding-top: 40px;
+    border-top: 1px solid $divider-color;
+
+    @media (min-width: $screen-md) {
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+
+  &__row {
+    gap: 40px 0;
+  }
+
+  &__col-text {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(lg, 5);
+    @include col(xxl, 5, $grid-columns, 32px);
+  }
+
+  &__col-img {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col-offset(lg, 1);
+    @include col(lg, 6);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 6, $grid-columns, 32px);
+  }
+
+  &__text {
+
+    & > *:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__img {
+    background-color: $grey-light;
+    border-radius: $border-radius--img;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

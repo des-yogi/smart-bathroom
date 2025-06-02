@@ -60,10 +60,12 @@
   &__text {
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 88px;
     min-width: 248px;
     padding: 16px;
     margin: 0 !important;
+    text-align: center;
     text-wrap: balance;
     word-break: normal;
     hyphens: none;
