@@ -82,7 +82,10 @@
     "standard-card": [],
     "issue-card": [],
     "issues-slider": [],
-    "location-about": []
+    "location-about": [],
+    "call-us": [],
+    "important": [],
+    "product-card": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

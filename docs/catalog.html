@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Catalogue</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="MobileOptimized" content="320">
+  <meta name="MobileOptimized" content="320">
   <meta name="format-detection" content="telephone=no">
   <meta name='format-detection' content="date=no">
   <meta name='format-detection' content="address=no">
@@ -27,7 +27,7 @@
   <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/noto-sans-v7-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin> -->
 
-  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
 
 </head>
 
@@ -36,7 +36,7 @@
 
   <div class="page__inner">
 
-    <div class="page__content">
+    <div class="page__content">
 
       <header class="container  page-header">
         <div class="page-header__inner">
@@ -58,15 +58,15 @@
             <img src="img/sbr-horiz.svg" alt="logo" width="302" height="33">
           </a>
 
-          <button id="nav-toggler" class="page-header__menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu">
-            <b class="page-header__menu-btn-text">MENU</b>
+          <button id="nav-toggler" class="page-header__menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu" aria-label="Mobile menu toggler">
+            <b class="page-header__menu-btn-text">MENU</b>
 
             <span class="burger"><span></span></span>
 
           </button>
         </div>
 
-        <div class="collapse  page-header__menu-wrapper" id="collapseMenu">
+        <div class="collapse  page-header__menu-wrapper" id="collapseMenu">
 
           <nav class="mob-nav">
             <ul class="list-nostyled  mob-nav__menu">
@@ -399,7 +399,7 @@
 
 
         </div>
-      </header>
+      </header>
 
       <nav class="container breadcrumbs" aria-label="Breadcrumb">
         <ol class="list-nostyled breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -435,7 +435,7 @@
 
       <main>
 
-        <div class="container  block-m">
+        <div class="container  block-m">
 
           <header class="header-showcase" style="background-image: url('img/hero-img.jpg');">
             <!-- 1264x480 -->
@@ -445,7 +445,7 @@
             </div>
           </header>
 
-        </div>
+        </div>
 
         <section class="container  block-m  catalog-slider">
           <div class="swiper  catalog-slider__container">
@@ -646,8 +646,9 @@
             <div class="row  project-gallery__row">
 
               <div class="project-gallery__col  project-gallery__col--catalog">
-                <a href="#" class="product-gallery__slide">
-                  <div class="embed-responsive  embed-responsive--3-4  product-gallery__img">
+
+                <a href="#" class="product-card">
+                  <div class="embed-responsive  embed-responsive--3-4  product-card__img">
                     <picture>
                       <source srcset="img/vertical-4x3-1.webp,
                                       img/vertical-4x3-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
@@ -669,16 +670,25 @@
                     </picture>
                     <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   </div>
-                  <div class="product-gallery__text">
-                    <h3 class="product-gallery__slide-title">Washlet bidet with a heated seat</h3>
-                    <p class="h3  product-gallery__price">200$</p>
+                  <div class="product-card__text">
+                    <p class="product-card__title">
+                      Single Hole Kitchen faucet
+                    </p>
+                    <div class="product-card__price-wrapper">
+                      <span class="product-card__price">200$</span>
+                      <span class="product-card__price  new">180$</span>
+                    </div>
+                    <p class="product-card__manufacturer">Manufacturer: <strong>Germany</strong></p>
+                    <p class="product-card__sku">SKU#: BO70L/R</p>
                   </div>
                 </a>
+
               </div>
 
               <div class="project-gallery__col  project-gallery__col--catalog">
-                <a href="#" class="product-gallery__slide">
-                  <div class="embed-responsive  embed-responsive--3-4  product-gallery__img">
+
+                <a href="#" class="product-card">
+                  <div class="embed-responsive  embed-responsive--3-4  product-card__img">
                     <picture>
                       <source srcset="img/vertical-4x3-1.webp,
                                       img/vertical-4x3-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
@@ -700,16 +710,25 @@
                     </picture>
                     <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   </div>
-                  <div class="product-gallery__text">
-                    <h3 class="product-gallery__slide-title">Washlet bidet with a heated seat</h3>
-                    <p class="h3  product-gallery__price">200$</p>
+                  <div class="product-card__text">
+                    <p class="product-card__title">
+                      Single Hole
+                    </p>
+                    <div class="product-card__price-wrapper">
+                      <span class="product-card__price">200$</span>
+                      <span class="product-card__price  new"></span>
+                    </div>
+                    <p class="product-card__manufacturer">Manufacturer: <strong>Germany</strong></p>
+                    <p class="product-card__sku">SKU#: BO70L/R</p>
                   </div>
                 </a>
+
               </div>
 
               <div class="project-gallery__col  project-gallery__col--catalog">
-                <a href="#" class="product-gallery__slide">
-                  <div class="embed-responsive  embed-responsive--3-4  product-gallery__img">
+
+                <a href="#" class="product-card">
+                  <div class="embed-responsive  embed-responsive--3-4  product-card__img">
                     <picture>
                       <source srcset="img/vertical-4x3-1.webp,
                                       img/vertical-4x3-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
@@ -731,16 +750,25 @@
                     </picture>
                     <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   </div>
-                  <div class="product-gallery__text">
-                    <h3 class="product-gallery__slide-title">Washlet bidet with a heated seat</h3>
-                    <p class="h3  product-gallery__price">200$</p>
+                  <div class="product-card__text">
+                    <p class="product-card__title">
+                      Single Hole Kitchen faucet
+                    </p>
+                    <div class="product-card__price-wrapper">
+                      <span class="product-card__price">200$</span>
+                      <span class="product-card__price  new"></span>
+                    </div>
+                    <p class="product-card__manufacturer">Manufacturer: <strong>Germany</strong></p>
+                    <p class="product-card__sku">SKU#: BO70L/R</p>
                   </div>
                 </a>
+
               </div>
 
               <div class="project-gallery__col  project-gallery__col--catalog">
-                <a href="#" class="product-gallery__slide">
-                  <div class="embed-responsive  embed-responsive--3-4  product-gallery__img">
+
+                <a href="#" class="product-card">
+                  <div class="embed-responsive  embed-responsive--3-4  product-card__img">
                     <picture>
                       <source srcset="img/vertical-4x3-1.webp,
                                       img/vertical-4x3-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
@@ -762,16 +790,25 @@
                     </picture>
                     <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   </div>
-                  <div class="product-gallery__text">
-                    <h3 class="product-gallery__slide-title">Washlet bidet with a heated seat</h3>
-                    <p class="h3  product-gallery__price">200$</p>
+                  <div class="product-card__text">
+                    <p class="product-card__title">
+                      Kitchen fauce
+                    </p>
+                    <div class="product-card__price-wrapper">
+                      <span class="product-card__price">200$</span>
+                      <span class="product-card__price  new"></span>
+                    </div>
+                    <p class="product-card__manufacturer">Manufacturer: <strong>Germany</strong></p>
+                    <p class="product-card__sku">SKU#: BO70L/R</p>
                   </div>
                 </a>
+
               </div>
 
               <div class="project-gallery__col  project-gallery__col--catalog">
-                <a href="#" class="product-gallery__slide">
-                  <div class="embed-responsive  embed-responsive--3-4  product-gallery__img">
+
+                <a href="#" class="product-card">
+                  <div class="embed-responsive  embed-responsive--3-4  product-card__img">
                     <picture>
                       <source srcset="img/vertical-4x3-1.webp,
                                       img/vertical-4x3-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
@@ -793,16 +830,25 @@
                     </picture>
                     <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   </div>
-                  <div class="product-gallery__text">
-                    <h3 class="product-gallery__slide-title">Washlet bidet with a heated seat</h3>
-                    <p class="h3  product-gallery__price">200$</p>
+                  <div class="product-card__text">
+                    <p class="product-card__title">
+                      Single Hole Kitchen faucet
+                    </p>
+                    <div class="product-card__price-wrapper">
+                      <span class="product-card__price">200$</span>
+                      <span class="product-card__price  new">180$</span>
+                    </div>
+                    <p class="product-card__manufacturer">Manufacturer: <strong>Germany</strong></p>
+                    <p class="product-card__sku">SKU#: BO70L/R</p>
                   </div>
                 </a>
+
               </div>
 
               <div class="project-gallery__col  project-gallery__col--catalog">
-                <a href="#" class="product-gallery__slide">
-                  <div class="embed-responsive  embed-responsive--3-4  product-gallery__img">
+
+                <a href="#" class="product-card">
+                  <div class="embed-responsive  embed-responsive--3-4  product-card__img">
                     <picture>
                       <source srcset="img/vertical-4x3-1.webp,
                                       img/vertical-4x3-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
@@ -824,16 +870,25 @@
                     </picture>
                     <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   </div>
-                  <div class="product-gallery__text">
-                    <h3 class="product-gallery__slide-title">Washlet bidet with a heated seat</h3>
-                    <p class="h3  product-gallery__price">200$</p>
+                  <div class="product-card__text">
+                    <p class="product-card__title">
+                      Single Hole
+                    </p>
+                    <div class="product-card__price-wrapper">
+                      <span class="product-card__price">200$</span>
+                      <span class="product-card__price  new"></span>
+                    </div>
+                    <p class="product-card__manufacturer">Manufacturer: <strong>Germany</strong></p>
+                    <p class="product-card__sku">SKU#: BO70L/R</p>
                   </div>
                 </a>
+
               </div>
 
               <div class="project-gallery__col  project-gallery__col--catalog">
-                <a href="#" class="product-gallery__slide">
-                  <div class="embed-responsive  embed-responsive--3-4  product-gallery__img">
+
+                <a href="#" class="product-card">
+                  <div class="embed-responsive  embed-responsive--3-4  product-card__img">
                     <picture>
                       <source srcset="img/vertical-4x3-1.webp,
                                       img/vertical-4x3-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
@@ -855,47 +910,25 @@
                     </picture>
                     <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   </div>
-                  <div class="product-gallery__text">
-                    <h3 class="product-gallery__slide-title">Washlet bidet with a heated seat</h3>
-                    <p class="h3  product-gallery__price">200$</p>
+                  <div class="product-card__text">
+                    <p class="product-card__title">
+                      Single Hole Kitchen faucet
+                    </p>
+                    <div class="product-card__price-wrapper">
+                      <span class="product-card__price">200$</span>
+                      <span class="product-card__price  new"></span>
+                    </div>
+                    <p class="product-card__manufacturer">Manufacturer: <strong>Germany</strong></p>
+                    <p class="product-card__sku">SKU#: BO70L/R</p>
                   </div>
                 </a>
+
               </div>
 
               <div class="project-gallery__col  project-gallery__col--catalog">
-                <a href="#" class="product-gallery__slide">
-                  <div class="embed-responsive  embed-responsive--3-4  product-gallery__img">
-                    <picture>
-                      <source srcset="img/vertical-4x3-1.webp,
-                                      img/vertical-4x3-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
-                      <source srcset="img/vertical-4x3-1.jpg,
-                                      img/vertical-4x3-1.jpg 2x" media="(min-width: 1440px)">
-                      <!-- 292x389, 438x584 2x -->
-                      <source srcset="img/vertical-4x3-1.webp,
-                                      img/vertical-4x3-1.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                      <source srcset="img/vertical-4x3-1.jpg,
-                                      img/vertical-4x3-1.jpg 2x" media="(min-width: 1200px)">
-                      <!-- 407x543, 610x813 2x -->
-                      <source srcset="img/vertical-4x3-1.webp" media="(min-width: 480px)" type="image/webp">
-                      <source srcset="img/vertical-4x3-1.jpg" media="(min-width: 480px)">
-                      <!-- 384x512 -->
-                      <source srcset="img/vertical-4x3-1.webp" media="(min-width: 300px)" type="image/webp">
-                      <source srcset="img/vertical-4x3-1.jpg" media="(min-width: 300px)">
-                      <!-- 276x368 -->
-                      <img src="img/vertical-4x3-1.jpg" alt="Alt" width="610" height="813" loading="lazy">
-                    </picture>
-                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                  </div>
-                  <div class="product-gallery__text">
-                    <h3 class="product-gallery__slide-title">Washlet bidet with a heated seat</h3>
-                    <p class="h3  product-gallery__price">200$</p>
-                  </div>
-                </a>
-              </div>
 
-              <div class="project-gallery__col  project-gallery__col--catalog">
-                <a href="#" class="product-gallery__slide">
-                  <div class="embed-responsive  embed-responsive--3-4  product-gallery__img">
+                <a href="#" class="product-card">
+                  <div class="embed-responsive  embed-responsive--3-4  product-card__img">
                     <picture>
                       <source srcset="img/vertical-4x3-1.webp,
                                       img/vertical-4x3-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
@@ -917,46 +950,23 @@
                     </picture>
                     <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   </div>
-                  <div class="product-gallery__text">
-                    <h3 class="product-gallery__slide-title">Washlet bidet with a heated seat</h3>
-                    <p class="h3  product-gallery__price">200$</p>
+                  <div class="product-card__text">
+                    <p class="product-card__title">
+                      Kitchen fauce
+                    </p>
+                    <div class="product-card__price-wrapper">
+                      <span class="product-card__price">200$</span>
+                      <span class="product-card__price  new"></span>
+                    </div>
+                    <p class="product-card__manufacturer">Manufacturer: <strong>Germany</strong></p>
+                    <p class="product-card__sku">SKU#: BO70L/R</p>
                   </div>
                 </a>
-              </div>
 
-              <div class="project-gallery__col  project-gallery__col--catalog">
-                <a href="#" class="product-gallery__slide">
-                  <div class="embed-responsive  embed-responsive--3-4  product-gallery__img">
-                    <picture>
-                      <source srcset="img/vertical-4x3-1.webp,
-                                      img/vertical-4x3-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
-                      <source srcset="img/vertical-4x3-1.jpg,
-                                      img/vertical-4x3-1.jpg 2x" media="(min-width: 1440px)">
-                      <!-- 292x389, 438x584 2x -->
-                      <source srcset="img/vertical-4x3-1.webp,
-                                      img/vertical-4x3-1.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                      <source srcset="img/vertical-4x3-1.jpg,
-                                      img/vertical-4x3-1.jpg 2x" media="(min-width: 1200px)">
-                      <!-- 407x543, 610x813 2x -->
-                      <source srcset="img/vertical-4x3-1.webp" media="(min-width: 480px)" type="image/webp">
-                      <source srcset="img/vertical-4x3-1.jpg" media="(min-width: 480px)">
-                      <!-- 384x512 -->
-                      <source srcset="img/vertical-4x3-1.webp" media="(min-width: 300px)" type="image/webp">
-                      <source srcset="img/vertical-4x3-1.jpg" media="(min-width: 300px)">
-                      <!-- 276x368 -->
-                      <img src="img/vertical-4x3-1.jpg" alt="Alt" width="610" height="813" loading="lazy">
-                    </picture>
-                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                  </div>
-                  <div class="product-gallery__text">
-                    <h3 class="product-gallery__slide-title">Washlet bidet with a heated seat</h3>
-                    <p class="h3  product-gallery__price">200$</p>
-                  </div>
-                </a>
               </div>
 
             </div>
-          </div>
+          </div>
 
           <div class="pagination" aria-label="Pagination" role="navigation">
             <ol class="pagination__list">
@@ -1009,7 +1019,7 @@
 
             <div class="swiper-wrapper">
 
-              <div class="swiper-slide  services-slider__slide">
+              <div class="swiper-slide  services-slider__slide">
 
                 <a href="#" class="blog-card-ext">
                   <div class="embed-responsive  embed-responsive--3-4  blog-card-ext__img">
@@ -1040,14 +1050,14 @@
 
                   <div class="blog-card-ext__text">
                     <p class="blog-card-ext__category">Bathroom </p>
-                    <h3 class="blog-card-ext__title">How to create a perfect Guest Bathroom</h3>
+                    <p class="blog-card-ext__title">How to create a perfect Guest Bathroom</p>
                     <p class="blog-card-ext__publishedon"><time datetime="2025-04-11">2025-04-11</time></p>
                   </div>
                 </a>
 
               </div>
 
-              <div class="swiper-slide  services-slider__slide">
+              <div class="swiper-slide  services-slider__slide">
 
                 <a href="#" class="blog-card-ext">
                   <div class="embed-responsive  embed-responsive--3-4  blog-card-ext__img">
@@ -1078,14 +1088,14 @@
 
                   <div class="blog-card-ext__text">
                     <p class="blog-card-ext__category">Bathroom </p>
-                    <h3 class="blog-card-ext__title">Senior Bathroom Renovation in Toronto</h3>
+                    <p class="blog-card-ext__title">Senior Bathroom Renovation in Toronto</p>
                     <p class="blog-card-ext__publishedon"><time datetime="2025-04-11">2025-04-11</time></p>
                   </div>
                 </a>
 
               </div>
 
-              <div class="swiper-slide  services-slider__slide">
+              <div class="swiper-slide  services-slider__slide">
 
                 <a href="#" class="blog-card-ext">
                   <div class="embed-responsive  embed-responsive--3-4  blog-card-ext__img">
@@ -1116,14 +1126,14 @@
 
                   <div class="blog-card-ext__text">
                     <p class="blog-card-ext__category">Bathroom </p>
-                    <h3 class="blog-card-ext__title">11 affordable tricks that transform your Master Bathroom into a luxurious modern space!</h3>
+                    <p class="blog-card-ext__title">11 affordable tricks that transform your Master Bathroom into a luxurious modern space!</p>
                     <p class="blog-card-ext__publishedon"><time datetime="2025-04-11">2025-04-11</time></p>
                   </div>
                 </a>
 
               </div>
 
-              <div class="swiper-slide  services-slider__slide">
+              <div class="swiper-slide  services-slider__slide">
 
                 <a href="#" class="blog-card-ext">
                   <div class="embed-responsive  embed-responsive--3-4  blog-card-ext__img">
@@ -1154,14 +1164,14 @@
 
                   <div class="blog-card-ext__text">
                     <p class="blog-card-ext__category">Bathroom </p>
-                    <h3 class="blog-card-ext__title">Modern bathroom Ideas to Inspire your next Reno</h3>
+                    <p class="blog-card-ext__title">Modern bathroom Ideas to Inspire your next Reno</p>
                     <p class="blog-card-ext__publishedon"><time datetime="2025-04-11">2025-04-11</time></p>
                   </div>
                 </a>
 
               </div>
 
-              <div class="swiper-slide  services-slider__slide">
+              <div class="swiper-slide  services-slider__slide">
 
                 <a href="#" class="blog-card-ext">
                   <div class="embed-responsive  embed-responsive--3-4  blog-card-ext__img">
@@ -1192,14 +1202,14 @@
 
                   <div class="blog-card-ext__text">
                     <p class="blog-card-ext__category">Bathroom </p>
-                    <h3 class="blog-card-ext__title">How to create a perfect Guest Bathroom</h3>
+                    <p class="blog-card-ext__title">How to create a perfect Guest Bathroom</p>
                     <p class="blog-card-ext__publishedon"><time datetime="2025-04-11">2025-04-11</time></p>
                   </div>
                 </a>
 
               </div>
 
-              <div class="swiper-slide  services-slider__slide">
+              <div class="swiper-slide  services-slider__slide">
 
                 <a href="#" class="blog-card-ext">
                   <div class="embed-responsive  embed-responsive--3-4  blog-card-ext__img">
@@ -1230,14 +1240,14 @@
 
                   <div class="blog-card-ext__text">
                     <p class="blog-card-ext__category">Bathroom </p>
-                    <h3 class="blog-card-ext__title">Senior Bathroom Renovation in Toronto</h3>
+                    <p class="blog-card-ext__title">Senior Bathroom Renovation in Toronto</p>
                     <p class="blog-card-ext__publishedon"><time datetime="2025-04-11">2025-04-11</time></p>
                   </div>
                 </a>
 
               </div>
 
-              <div class="swiper-slide  services-slider__slide">
+              <div class="swiper-slide  services-slider__slide">
 
                 <a href="#" class="blog-card-ext">
                   <div class="embed-responsive  embed-responsive--3-4  blog-card-ext__img">
@@ -1268,14 +1278,14 @@
 
                   <div class="blog-card-ext__text">
                     <p class="blog-card-ext__category">Bathroom </p>
-                    <h3 class="blog-card-ext__title">11 affordable tricks that transform your Master Bathroom into a luxurious modern space!</h3>
+                    <p class="blog-card-ext__title">11 affordable tricks that transform your Master Bathroom into a luxurious modern space!</p>
                     <p class="blog-card-ext__publishedon"><time datetime="2025-04-11">2025-04-11</time></p>
                   </div>
                 </a>
 
               </div>
 
-              <div class="swiper-slide  services-slider__slide">
+              <div class="swiper-slide  services-slider__slide">
 
                 <a href="#" class="blog-card-ext">
                   <div class="embed-responsive  embed-responsive--3-4  blog-card-ext__img">
@@ -1306,7 +1316,7 @@
 
                   <div class="blog-card-ext__text">
                     <p class="blog-card-ext__category">Bathroom </p>
-                    <h3 class="blog-card-ext__title">Modern bathroom Ideas to Inspire your next Reno</h3>
+                    <p class="blog-card-ext__title">Modern bathroom Ideas to Inspire your next Reno</p>
                     <p class="blog-card-ext__publishedon"><time datetime="2025-04-11">2025-04-11</time></p>
                   </div>
                 </a>
@@ -1329,7 +1339,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section>
 
         <section class="block-m  brand-slider">
           <h2 class="visually-hidden">Brands we work with</h2>
@@ -1388,7 +1398,14 @@
 
     </div>
 
-    <div class="page__footer-wrapper">
+    <div class="page__footer-wrapper">
+
+      <div class="container  call-us__wrapper">
+        <a href="tel:+14164817477" class="call-us" title="Call Us">
+          <svg width="32" height="32" role="graphics-symbol"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#phone"></use></svg>
+        </a>
+      </div>
+
 
       <footer class="container  page-footer">
         <div class="page-footer__inner">
@@ -1415,7 +1432,7 @@
                 <span class="h5">306 Eglinton Ave W</span>
               </li>
 
-            </ul>
+            </ul>
 
             <div class="rating">
               <span>
@@ -1490,7 +1507,7 @@
 
           </div>
 
-          <div class="page-footer__copyrights">
+          <div class="page-footer__copyrights">
 
             <section class="copyrights">
               <h3 class="visually-hidden">Copyright and other information</h3>
@@ -1515,6 +1532,7 @@
           </div>
 
         </div>
+
       </footer>
 
     </div>

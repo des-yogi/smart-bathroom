@@ -12,10 +12,20 @@
 
         <h1 class="h2  product-info__title">Product name</h1>
 
+        <div class="product-info__rating">
+          <p class="product-info__review-num">362 people left reviews</p>
+          <div class="stars" style="--rating: 4.5;">
+            <span class="stars__score">4.5</span>
+            <p class="visually-hidden">Rating of this product is @@rating out of 5</p>
+          </div>
+        </div>
+
         <div class="product-info__add-info">
           <p class="product-info__material">Material:&ensp;<strong>Acrylic</strong></p>
           <p class="product-info__sku">SKU#:&ensp;<strong>BO70L/R</strong></p>
         </div>
+
+        <p class="product-info__manufacturer">Manufacturer:&ensp;<strong>Germany</strong></p>
 
         <div class="product-info__text">
           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
@@ -30,7 +40,10 @@
             <li>Patterned bottom</li>
           </ul>
 
-          <p class="h3  product-info__price">200&thinsp;$</p>
+          <div class="product-info__price-wrapper">
+            <p class="h3  product-info__price">200&thinsp;$</p>
+            <p class="h3  product-info__price  new">180&thinsp;$</p>
+          </div>
         </div>
 
         <div class="product-info__order">

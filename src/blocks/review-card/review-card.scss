@@ -26,4 +26,20 @@
     margin: 0;
     color: $black;
   }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__rating-link {
+    display: inline-flex;
+
+    img {
+      height: 40px;
+    }
+  }
 }

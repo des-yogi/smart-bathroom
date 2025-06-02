@@ -123,8 +123,12 @@
       font-size: 18px;
     }
 
+    & > *:first-child {
+      margin-top: 0;
+    }
+
     ul {
-      font-weight: 700;
+      font-weight: 500;
     }
   }
 
