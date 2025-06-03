@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Reviews</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>You have JavaScript disabled! We apologize, but this makes it difficult to use this site…</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main>
+
+        <div class="container  block-m">
+          @@include('blocks/header-showcase/header-showcase.html', {
+            "title": "Reviews",
+            "intro": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda odio accusantium atque dicta eligendi ad! Id blanditiis omnis eveniet harum doloremque.</p>",
+            "img": "hero-img"
+          })
+        </div>
+
+        @@include('blocks/reviews/reviews.html')
+
+        @@include('blocks/review-links/review-links.html')
+
+        @@include('blocks/text-2-col/text-2-col.html', {
+          "title": "It's good for You! It's good for Us!",
+          "text": "<p>At Smart Bathrooms Renovation we bring together word class design, premium materials, and seamless project execution to create bathrooms that reflect intelligence, sophistication, and timeless elegance.</p>"
+        })
+
+        @@include('blocks/showroom-slider/showroom-slider.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

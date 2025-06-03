@@ -1,0 +1,95 @@
+<!--DEV
+@ @include('blocks/order-modal/order-modal.html')
+-->
+
+<!-- Order Modal -->
+<div class="modal fade  order-modal" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
+    <form class="modal-content" action="#" method="post">
+      <div class="modal-header">
+        <h3 class="display-2" id="orderModalLabel">Order product</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"><path d="M20 9.47h-9.47V0H9.48v9.47H0v1.05h9.47v9.47h1.05v-9.47h9.47V9.47Z"/></svg>
+        </button>
+      </div>
+
+      <section class="modal-body  order-modal__body">
+        <div class="order-modal__main">
+          <div class="embed-responsive  embed-responsive--1-1  order-modal__img">
+            <picture>
+              <source srcset="img/modal-img.webp,
+                              img/modal-img.webp 2x" type="image/webp">
+              <img src="img/modal-img.jpg"
+                   srcset="img/modal-img.jpg,
+                           img/modal-img.jpg 2x"
+                   alt="Alt" width="160" height="160" loading="lazy">
+            </picture>
+          </div>
+
+          <div class="order-modal__descr">
+            <p class="h4  order-modal__category">Faucet</p>
+            <h4 class="h3  order-modal__name">Retro 8 Inch Bathroom Faucet - Chrome with X-Shaped Handles</h4>
+            <p class="order-modal__option order-modal__option--sku">
+              SKU#: <strong>BO70L/R</strong>
+            </p>
+            <p class="order-modal__option">
+              Material: <strong>Acrylic</strong>
+            </p>
+            <p class="order-modal__option">
+              Manufacturer: <strong>Germany</strong>
+            </p>
+          </div>
+        </div>
+        <div class="order-modal__fields">
+          <label class="field-text">
+            <span class="field-text__name">Name</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" name="name" value="">
+              <span class="field-text__help-text" data-error="name"></span>
+            </span>
+          </label>
+
+          <label class="field-text">
+            <span class="field-text__name">Email (*)</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="email" name="email" value="">
+              <span class="field-text__help-text" data-error="email"></span>
+            </span>
+          </label>
+
+          <label class="field-text">
+            <span class="field-text__name">Phone</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="tel" name="tel" value="">
+              <span class="field-text__help-text" data-error="tel"></span>
+            </span>
+          </label>
+
+          <label class="field-text">
+            <span class="field-text__name">Your message</span>
+            <span class="field-text__input-wrap">
+              <textarea class="field-text__input" name="message" rows="5"></textarea>
+              <span class="field-text__help-text" data-error="message"></span>
+            </span>
+          </label>
+        </div>
+      </section>
+
+      <div class="modal-footer">
+        <div class="field-actions  field-actions__agreement">
+          <!-- <div class="field-actions__text">* — обязательные поля</div> -->
+          <div class="field-checkbox">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+              <span class="field-checkbox__name-text">I agree to the processing of personal data in accordance with the <a href="#" style="text-decoration: underline;">Privacy Policy</a></span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn  order-modal__submit-btn" name="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
