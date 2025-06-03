@@ -85,7 +85,9 @@
     "location-about": [],
     "call-us": [],
     "important": [],
-    "product-card": []
+    "product-card": [],
+    "reviews": [],
+    "order-modal": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
