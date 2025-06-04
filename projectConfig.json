@@ -87,7 +87,8 @@
     "important": [],
     "product-card": [],
     "reviews": [],
-    "order-modal": []
+    "order-modal": [],
+    "login-form": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

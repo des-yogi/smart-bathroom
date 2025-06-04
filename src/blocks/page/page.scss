@@ -369,10 +369,14 @@ a {
   &__header {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
     gap: 20px 16px;
     margin-bottom: 32px;
+
+    @media (min-width: $screen-md) {
+      align-items: flex-end;
+      gap: 20px;
+    }
 
     @media (min-width: $screen-xxl) {
       gap: 32px;
@@ -383,6 +387,10 @@ a {
   &__title {
     margin: 0 !important;
     word-break: normal;
+
+    @media (min-width: $screen-md) {
+      flex: 1 1;
+    }
   }
 }
 

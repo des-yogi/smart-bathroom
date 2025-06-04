@@ -63,6 +63,7 @@
 
       height: auto;
       min-height: calc(#{$textarea-height} + 2px);
+      padding: 10px 16px;
       resize: vertical;
     }
   }

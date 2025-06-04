@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>AI Model</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>You have JavaScript disabled! We apologize, but this makes it difficult to use this site…</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main>
+
+        <div class="container  block-m">
+          @@include('blocks/header-showcase/header-showcase.html', {
+            "title": "AI Model",
+            "intro": "",
+            "img": "hero-img"
+          })
+        </div>
+
+        <section class="block-m  work-stages  work-stages--login">
+          <div class="container  work-stages__header">
+            <h2 class="display-2  work-stages__title">How It Works</h2>
+          </div>
+
+          <ul class="container  list-nostyled  work-stages__list">
+
+            <li class="work-stages__item">
+              <p class="h3  work-stages__text">Enter your short, 1 sentence bathroom description</p>
+              <span class="work-stages__icon" aria-hidden="true"></span>
+            </li>
+
+            <li class="work-stages__item">
+              <p class="h3  work-stages__text">Will be sent to e-mail</p>
+              <span class="work-stages__icon" aria-hidden="true"></span>
+            </li>
+
+            <li class="work-stages__item">
+              <p class="h3  work-stages__text">The work is finished</p>
+              <span class="work-stages__icon" aria-hidden="true"></span>
+            </li>
+
+          </ul>
+
+          <!-- <p class="container  work-stages__note">* Electrical - Standard (two potlights, vanity light, exhaust fan, upgrade all switches and receptacles)</p> -->
+        </section>
+
+        @@include('blocks/text-2-col/text-2-col.html', {
+          "title": "It's good for You! It's good for Us!",
+          "text": "<p>At Smart Bathrooms Renovation we bring together word class design, premium materials, and seamless project execution to create bathrooms that reflect intelligence, sophistication, and timeless elegance.</p>"
+        })
+
+        <section class="container  block-m  login-form">
+          <h2 class="display-2">Create your AI interior</h2>
+
+          <div class="row  login-form__row">
+            <div class="login-form__inner-col  login-form__inner-col--ai">
+              <form class="login-form__form" action="#" method="post">
+                <label class="field-text">
+                  <span class="field-text__name">Write your promt</span>
+                  <span class="field-text__input-wrap">
+                    <textarea class="field-text__input" name="promt" rows="5"></textarea>
+                    <span class="field-text__help-text" data-error="promt"></span>
+                  </span>
+                </label>
+
+                <div class="login-form__footer" style="margin-top: 40px;">
+                  <!-- <div class="login-form__links">
+                    <a href="#" class="login-form__link">Register</a>
+                    <a href="#" class="login-form__link">Forgot password?</a>
+                  </div> -->
+
+                  <button class="btn" type="submit" name="submit">
+                    <span>Submit</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        @@include('blocks/gallery-2row/gallery-2row.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

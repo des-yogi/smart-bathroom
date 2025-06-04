@@ -13,6 +13,11 @@
     .h3 {
       margin: 0;
     }
+
+    .stars {
+      --star-size: 48px;
+      font-size: var(--star-size);
+    }
   }
 
   &__peoples.h3 {
@@ -35,11 +40,6 @@
     @include col(xs, 12);
     @include col(md, 6);
     @include col(xl, 4, $grid-columns, 32px);
-  }
-
-  .stars {
-    --star-size: 48px;
-    font-size: var(--star-size);
   }
 
   .stars__score {

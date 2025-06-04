@@ -63,6 +63,7 @@
     justify-content: center;
     min-height: 88px;
     min-width: 248px;
+    height: 100%;
     padding: 16px;
     margin: 0 !important;
     text-align: center;
@@ -90,5 +91,26 @@
 
   &__note {
     margin-top: 40px;
+  }
+
+  &--login {
+
+    #{$block-name}__list {
+      flex-wrap: wrap;
+      overflow-x: none;
+    }
+
+    #{$block-name}__item {
+      width: 100%;
+
+      @media (min-width: $screen-lg) {
+        flex-basis: calc(33.3333% - 11px);
+        transform: translateX(28px); //56px / 2
+      }
+    }
+
+    #{$block-name}__text {
+      flex: 1 1 auto;
+    }
   }
 }
