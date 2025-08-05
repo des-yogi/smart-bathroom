@@ -59,7 +59,7 @@
     "merge-stream": "^2.0.0",
     "mkdirp": "^3.0.0",
     "node-sass": "^9.0.0",
-    "postcss": "^8.4.45",
+    "postcss": "^8.5.5",
     "postcss-discard-comments": "^7.0.3",
     "postcss-import": "^16.1.0",
     "postcss-inline-svg": "^6.0.0",
@@ -70,10 +70,10 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
-    "focus-visible": "^5.2.1",
-    "bootstrap": "^5.3.2",
     "autosize": "^6.0.1",
+    "bootstrap": "^5.3.2",
+    "focus-visible": "^5.2.1",
     "svg4everybody": "^2.1.9",
-    "swiper": "^11.2.6"
+    "swiper": "^11.2.8"
   }
 }

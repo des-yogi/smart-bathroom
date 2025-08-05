@@ -2,35 +2,37 @@
 @ @include('blocks/page-header/page-header.html')
 -->
 
-<header class="container  page-header">
-  <div class="page-header__inner">
+<div class="page-header__wrapper">
+  <header class="container  page-header">
+    <div class="page-header__inner">
 
-    <ul class="list-nostyled  page-header__short-menu">
-      <li class="page-header__short-menu-item">
-        <a href="#" class="page-header__short-menu-link">
-          <span>Our contacts</span>
-        </a>
-      </li>
-      <li class="page-header__short-menu-item">
-        <a href="#" class="page-header__short-menu-link">
-          <span>Portfolio</span>
-        </a>
-      </li>
-    </ul>
+      <ul class="list-nostyled  page-header__short-menu">
+        <li class="page-header__short-menu-item">
+          <a href="#" class="page-header__short-menu-link">
+            <span>Our contacts</span>
+          </a>
+        </li>
+        <li class="page-header__short-menu-item">
+          <a href="#" class="page-header__short-menu-link">
+            <span>Portfolio</span>
+          </a>
+        </li>
+      </ul>
 
-    <a href="index.html" class="logo  logo--header" title="SBR title">
-      <img src="img/sbr-horiz.svg" alt="logo" width="302" height="33">
-    </a>
+      <a href="index.html" class="logo  logo--header" title="SBR title">
+        <img src="img/sbr-horiz.svg" alt="logo" width="302" height="33">
+      </a>
 
-    <button id="nav-toggler" class="page-header__menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu" aria-label="Mobile menu toggler">
-      <b class="page-header__menu-btn-text">MENU</b>
-      @@include('../../blocks/burger/burger.html')
-    </button>
-  </div>
+      <button id="nav-toggler" class="page-header__menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu" aria-label="Mobile menu toggler">
+        <b class="page-header__menu-btn-text">MENU</b>
+        @@include('../../blocks/burger/burger.html')
+      </button>
+    </div>
 
-  <div class="collapse  page-header__menu-wrapper" id="collapseMenu">
-    @@include('../../blocks/mob-nav/mob-nav.html')
+    <div class="collapse  page-header__menu-wrapper" id="collapseMenu">
+      @@include('../../blocks/mob-nav/mob-nav.html')
 
-    @@include('../../blocks/main-nav/main-nav.html')
-  </div>
-</header>
+      @@include('../../blocks/main-nav/main-nav.html')
+    </div>
+  </header>
+</div>
