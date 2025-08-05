@@ -1,13 +1,27 @@
 .page-header {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 16px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  //margin-bottom: 16px;
+  background-color: $body-bg;
 
   @media (min-width: $screen-md) {
     margin-bottom: 32px;
   }
 
   $block-name:                &; // #{$block-name}__element
+
+  &__wrapper {
+    margin-bottom: calc(78px - -16px);
+
+    @media (min-width: $screen-md) {
+      margin-bottom: calc(78px - -32px);
+    }
+
+    @media (min-width: $screen-xxl) {
+      margin-bottom: calc(100px - -32px);
+    }
+  }
 
   &__inner {
     display: flex;
@@ -91,6 +105,6 @@
   }
 
   // &__menu-wrapper {
-
+  //   border-bottom: 1px solid $border-color;
   // }
 }

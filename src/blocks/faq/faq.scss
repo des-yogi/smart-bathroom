@@ -47,7 +47,11 @@
 
     @media (min-width: $screen-md) {
       position: sticky;
-      top: 24px;
+      top: 94px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      top: 114px;
     }
   }
 
