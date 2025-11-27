@@ -8,12 +8,12 @@
 
   img {
     display: block;
-    width: 224px;
-    height: 24px;
+    width: 302px;
+    height: 33px;
 
-    @media (min-width: $screen-xl) {
-      width: 302px;
-      height: 33px;
+    @media (max-width: $screen-xl) {
+      width: 133px; //224
+      height: 26px; //24
     }
   }
 

@@ -42,7 +42,7 @@
         <header class="container  page-header">
           <div class="page-header__inner">
 
-            <ul class="list-nostyled  page-header__short-menu">
+            <!-- <ul class="list-nostyled  page-header__short-menu">
               <li class="page-header__short-menu-item">
                 <a href="#" class="page-header__short-menu-link">
                   <span>Our contacts</span>
@@ -53,18 +53,39 @@
                   <span>Portfolio</span>
                 </a>
               </li>
-            </ul>
+            </ul> -->
 
             <a href="index.html" class="logo  logo--header" title="SBR title">
-              <img src="img/sbr-horiz.svg" alt="logo" width="302" height="33">
+              <picture>
+                <source srcset="img/sbr-horiz-sm.svg" media="(max-width: 1280px)">
+                <img src="img/sbr-horiz.svg" alt="logo" width="302" height="33">
+              </picture>
             </a>
 
-            <button id="nav-toggler" class="page-header__menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu" aria-label="Mobile menu toggler">
-              <b class="page-header__menu-btn-text">MENU</b>
+            <div class="page-header__service">
 
-              <span class="burger"><span></span></span>
+              <a href="tel:+14164817477" class="page-header__btn">
+                <span class="page-header__icon-wrapper">
+                  <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#phone-24"></use></svg>
+                </span>
+                <span class="page-header__btn-text">+14164817477</span>
+              </a>
 
-            </button>
+              <a href="#formConsult" class="page-header__btn">
+                <span class="page-header__icon-wrapper">
+                  <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#support-24"></use></svg>
+                </span>
+                <span class="page-header__btn-text">Free Esimate</span>
+              </a>
+
+              <button id="nav-toggler" class="page-header__menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu" aria-label="Mobile menu toggler">
+                <b class="page-header__menu-btn-text">MENU</b>
+
+                <span class="burger"><span></span></span>
+
+              </button>
+            </div>
+
           </div>
 
           <div class="collapse  page-header__menu-wrapper" id="collapseMenu">

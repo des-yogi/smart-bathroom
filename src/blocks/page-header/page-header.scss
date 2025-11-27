@@ -36,22 +36,33 @@
     }
   }
 
-  &__short-menu {
-    display: none;
+  &__service {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 8px;
 
     @media (min-width: $screen-md) {
-      display: inline-flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0 24px;
+      gap: 0 12px;
     }
   }
 
-  &__short-menu-item {
-    margin-bottom: 0;
-  }
+  // &__short-menu {
+  //   display: none;
 
-  &__short-menu-link,
+  //   @media (min-width: $screen-md) {
+  //     display: inline-flex;
+  //     flex-wrap: wrap;
+  //     align-items: center;
+  //     gap: 0 24px;
+  //   }
+  // }
+
+  // &__short-menu-item {
+  //   margin-bottom: 0;
+  // }
+
+  //&__short-menu-link,
   &__menu-btn-text {
     display: inline-flex;
     align-items: center;
@@ -63,22 +74,22 @@
     text-decoration: none;
   }
 
-  &__short-menu-link {
+  // &__short-menu-link {
 
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-      color: $main-color;
-    }
-  }
+  //   &:hover,
+  //   &:focus {
+  //     text-decoration: underline;
+  //     color: $main-color;
+  //   }
+  // }
 
   &__menu-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    min-width: 48px;
-    height: 48px;
+    min-width: 44px;
+    height: 44px;
     padding: 0;
     border: none;
     font-family: $font-family;
@@ -87,6 +98,10 @@
     background-color: $white;
     cursor: pointer;
     user-select: none;
+
+    @media (max-width: $screen-md - 1) {
+      border: 1px solid $border-color;
+    }
 
     &:hover,
     &:focus {
@@ -101,6 +116,52 @@
       display: block;
       white-space: nowrap;
       transition: color $transition-time;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 0;
+    //text-decoration: none;
+    color: $text-color;
+    user-select: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $link-color--hover;
+    }
+
+    @media (max-width: $screen-md - 1) {
+      border: 1px solid $border-color;
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: $font-size-lg;
+    }
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__btn-text {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      padding: 8px;
+      line-height: 1;
     }
   }
 
