@@ -1,0 +1,22 @@
+<!--DEV
+@ @include('blocks/video-card-9-16/video-card-9-16.html')
+-->
+
+<video class="embed-responsive  embed-responsive--9-16  js-lazy-video  video-card-9-16"
+       preload="none"
+       playsinline
+       poster="img/video-placeholder.jpg">
+  <source data-src="video/video-placeholder.webm" type="video/webm">
+  <source data-src="video/video-placeholder.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<span class="video-card-9-16__play js-video-toggle" role="button" tabindex="0" aria-label="Play or stop video">
+  <span class="video-card-9-16__icon">
+    <svg width="56" height="56" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#video-play"></use></svg>
+  </span>
+</span>
+
+<span class="video-card-9-16__fullscreen js-video-fullscreen" role="button" tabindex="0" aria-label="Fullscreen">
+  <svg width="32" height="32" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#fullscreen"></use></svg>
+</span>
