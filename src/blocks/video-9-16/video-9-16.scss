@@ -39,7 +39,7 @@
     &.is-playing {
 
       .video-card-9-16__icon {
-        opacity: 0;
+        opacity: 0 !important;
       }
     }
 
