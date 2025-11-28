@@ -1,0 +1,73 @@
+.video-card-9-16 {
+  $block-name:                &; // #{$block-name}__element
+
+  &__play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
+    // width: 56px;
+    // height: 56px;
+    padding: 0;
+    border: none;
+    background: none;
+    user-select: none;
+    cursor: pointer;
+    pointer-events: auto;
+
+    &:hover,
+    &:focus {
+
+      .video-card-9-16__icon {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__icon {
+    width: 56px;
+    height: 56px;
+    color: $white;
+    background-color: $text-color;
+    border-radius: 50%;
+    opacity: $opacity;
+    //transform: translate(-50%, -50%) scale(0.9);
+    transition: opacity 0.25s ease;
+
+    svg {
+      width: 56px;
+      height: 56px;
+      transform: translateX(2px);
+    }
+  }
+
+  &__fullscreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 5;
+    right: 24px;
+    bottom: 24px;
+    width: 32px;
+    height: 32px;
+    color: $white;
+    opacity: $opacity;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $transition-time ease,
+                transform $transition-time ease;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+}

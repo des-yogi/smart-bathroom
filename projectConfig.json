@@ -88,7 +88,9 @@
     "product-card": [],
     "reviews": [],
     "order-modal": [],
-    "login-form": []
+    "login-form": [],
+    "video-9-16": [],
+    "video-card-9-16": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
@@ -119,6 +121,9 @@
   ],
   "addImages": [
     "./src/img/*.{jpg,jpeg,gif,png,svg,ico,webp}"
+  ],
+  "addVideo": [
+    "./src/video/*.{mp4,webm}"
   ],
   "copiedCss": [],
   "copiedJs": [],
