@@ -90,7 +90,8 @@
     "order-modal": [],
     "login-form": [],
     "video-9-16": [],
-    "video-card-9-16": []
+    "video-card-9-16": [],
+    "field-range": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     speed: 400,
     slidesPerView: 'auto',
     spaceBetween: 16,
-    //grabCursor: true,
     breakpoints: {
       1280: {
         slidesPerView: 3,
@@ -74,6 +73,27 @@ document.addEventListener('DOMContentLoaded', function () {
   videoSlider.on('slideChange', pauseAllVideos);
 
   // -----------------------
+  // СИНХРОНИЗАЦИЯ громкости и range-контрола
+  // -----------------------
+  function syncVolumeControl(slide, video) {
+    const volControl = slide.querySelector('.field-range__input');
+    if (!volControl) return;
+
+    let initialVol = parseInt(volControl.value, 10) / 100;
+    video.volume = Math.max(0, Math.min(1, initialVol));
+    volControl.value = Math.round(video.volume * 100);
+
+    volControl.oninput = function () {
+      const val = parseInt(volControl.value, 10);
+      video.volume = Math.max(0, Math.min(1, val / 100));
+    };
+
+    video.addEventListener('volumechange', function () {
+      volControl.value = Math.round(video.volume * 100);
+    });
+  }
+
+  // -----------------------
   // Общая логика toggle play/pause
   // -----------------------
   function toggleVideoByButton(btn) {
@@ -95,11 +115,9 @@ document.addEventListener('DOMContentLoaded', function () {
       video.dataset.loaded = 'true';
     }
 
-    video.muted = true;
     video.playsInline = true;
 
     if (video.paused) {
-      // стопаем остальные
       document.querySelectorAll('.video-9-16__slide').forEach((s) => {
         const v = s.querySelector('video.js-lazy-video');
         if (v && !v.paused) v.pause();
@@ -114,7 +132,8 @@ document.addEventListener('DOMContentLoaded', function () {
         .play()
         .then(() => {
           slide.classList.add('is-playing');
-          slide.classList.add('has-started');   // пометка, что это видео уже запускали
+          slide.classList.add('has-started');
+          syncVolumeControl(slide, video);
         })
         .catch((err) => console.error('VIDEO PLAY ERROR', err));
     } else {
@@ -126,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // -----------------------
   // Pointer‑логика: клик/тап vs свайп
   // -----------------------
-  const MOVE_THRESHOLD = 12; // px
+  const MOVE_THRESHOLD = 12;
 
   let startX = 0;
   let startY = 0;
@@ -158,7 +177,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const dy = Math.abs(e.clientY - startY);
       trackingBtn = null;
 
-      // если было реальное перетаскивание – считаем свайп, видео не трогаем
       if (dx > MOVE_THRESHOLD || dy > MOVE_THRESHOLD) {
         return;
       }
@@ -168,9 +186,6 @@ document.addEventListener('DOMContentLoaded', function () {
     true,
   );
 
-  // -----------------------
-  // Клавиатура: Enter / Space по .js-video-toggle
-  // -----------------------
   document.addEventListener(
     'keydown',
     (e) => {
@@ -178,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!btn) return;
 
       if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault(); // чтобы Space не скроллил страницу
+        e.preventDefault();
         toggleVideoByButton(btn);
       }
     },
@@ -189,7 +204,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // FULLSCREEN
   // =======================
 
-  // helper для Fullscreen API
   function requestFullScreenFor(el) {
     if (el.requestFullscreen) return el.requestFullscreen();
     if (el.webkitRequestFullscreen) return el.webkitRequestFullscreen();
@@ -198,7 +212,6 @@ document.addEventListener('DOMContentLoaded', function () {
     return Promise.reject(new Error('Fullscreen API not supported'));
   }
 
-  // клик мышью/тач по .js-video-fullscreen
   document.addEventListener(
     'click',
     (e) => {
@@ -211,7 +224,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const video = slide.querySelector('video.js-lazy-video');
       if (!video) return;
 
-      // подстраховка ленивки (аналогично toggleVideoByButton)
       if (video.dataset.loaded !== 'true') {
         const sources = video.querySelectorAll('source[data-src]');
         sources.forEach((source) => {
@@ -223,10 +235,8 @@ document.addEventListener('DOMContentLoaded', function () {
         video.dataset.loaded = 'true';
       }
 
-      video.muted = true;
       video.playsInline = true;
 
-      // вариант: если видео было на паузе — запускаем и сразу разворачиваем
       const ensurePlaying = video.paused
         ? video.play().catch((err) => {
             console.error('VIDEO PLAY ERROR before fullscreen', err);
@@ -236,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
       Promise.resolve(ensurePlaying).then(() => {
         slide.classList.add('is-playing');
         slide.classList.add('has-started');
-
+        syncVolumeControl(slide, video);
         requestFullScreenFor(video).catch((err) => {
           console.error('FULLSCREEN ERROR', err);
         });
@@ -245,7 +255,6 @@ document.addEventListener('DOMContentLoaded', function () {
     true,
   );
 
-  // клавиатура для .js-video-fullscreen (Enter / Space)
   document.addEventListener(
     'keydown',
     (e) => {
@@ -254,19 +263,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        fsBtn.click(); // дергаем тот же код, что и для мыши
+        fsBtn.click();
       }
     },
     true,
   );
 
-  // (опционально) реакция на выход из fullscreen
-  // если нужно при выходе ставить видео на паузу — раскомментируй:
+  // -----------------------
+  // Возвращаем к плейсхолдеру после окончания видео
+  // -----------------------
+  document
+    .querySelectorAll('.video-9-16__slide')
+    .forEach((slide) => {
+      const video = slide.querySelector('video.js-lazy-video');
+      if (video) {
+        video.addEventListener('ended', function () {
+          video.pause();
+          video.currentTime = 0;
+          slide.classList.remove('is-playing');
+        });
+      }
+    });
+
   /*
   document.addEventListener('fullscreenchange', () => {
     const fsEl = document.fullscreenElement;
     if (!fsEl) {
-      // вышли из fullscreen
       const videos = document.querySelectorAll('video.js-lazy-video');
       videos.forEach((video) => {
         if (!video.paused) {
