@@ -1,0 +1,109 @@
+.field-range {
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  width: 100%;
+  margin: 0;
+
+  &__name {
+    @include field-name;
+  }
+
+  &__input-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+
+  &__input {
+    align-self: center;
+    padding: 0;
+    width: 100%;
+    height: 8px;
+    border-radius: 0;
+    border: 0;
+    background: none;
+    font-size: inherit;
+    cursor: pointer;
+    appearance: none;
+
+    &::-webkit-slider-runnable-track,
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none; // stylelint-disable-line  property-no-vendor-prefix
+    }
+
+    //&:focus {
+      //@include field-focus;
+    //}
+
+    // Фоновая линия ползунка
+
+    // Да, да, и это — локальная примесь.
+    @mixin field-range-runnable-track {
+      box-sizing: border-box;
+      width: 100%;
+      height: 6px;
+      border-radius: $border-radius;
+      background-color: $white;
+      border: 1px solid $white;
+      opacity: $opacity;
+    }
+
+    // Увы, тут похожие наборы свойств приходится писать порознь.
+    &::-webkit-slider-runnable-track {
+      @include field-range-runnable-track; // локальная примесь!
+    }
+
+    &::-moz-range-track {
+      @include field-range-runnable-track; // локальная примесь!
+    }
+
+    &::-ms-track {
+      @include field-range-runnable-track; // локальная примесь!
+      color: transparent;
+    }
+
+
+    // Смещающийся элемент ползунка
+
+    // Да, да, и это — локальная примесь.
+    @mixin field-range-slider-thumb {
+      box-sizing: border-box;
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      box-shadow: none;
+      cursor: ew-resize;
+      background: $text-color;
+      border: 2px solid rgba($white, $opacity);
+    }
+
+    &::-webkit-slider-thumb {
+      margin-top: -0.68em;
+      @include field-range-slider-thumb; // локальная примесь!
+    }
+
+    &::-moz-range-thumb {
+      @include field-range-slider-thumb; // локальная примесь!
+    }
+
+    &::-ms-thumb {
+      @include field-range-slider-thumb; // локальная примесь!
+    }
+
+    &::-ms-fill-lower,
+    &::-ms-tooltip {
+      display: none;
+    }
+  }
+
+  &__help-text {
+    @include field-help-text;
+    padding-top: 0;
+  }
+}
+

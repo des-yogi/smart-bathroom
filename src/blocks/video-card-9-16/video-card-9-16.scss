@@ -47,14 +47,27 @@
     }
   }
 
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    position: absolute;
+    z-index: 5;
+    right: 24px;
+    left: 24px;
+    bottom: 24px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+  }
+
   &__fullscreen {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    z-index: 5;
-    right: 24px;
-    bottom: 24px;
+    flex: 0 0 32px;
     width: 32px;
     height: 32px;
     color: $white;

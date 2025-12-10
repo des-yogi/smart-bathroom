@@ -6,8 +6,8 @@
        preload="none"
        playsinline
        poster="img/video-placeholder.jpg">
-  <source data-src="video/video-placeholder.webm" type="video/webm">
-  <source data-src="video/video-placeholder.mp4" type="video/mp4">
+  <source data-src="video/sbr-video-01.webm" type="video/webm">
+  <source data-src="video/sbr-video-01.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -17,6 +17,17 @@
   </span>
 </span>
 
-<span class="video-card-9-16__fullscreen js-video-fullscreen" role="button" tabindex="0" aria-label="Fullscreen">
-  <svg width="32" height="32" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#fullscreen"></use></svg>
-</span>
+<div class="video-card-9-16__controls">
+
+  <div class="field-range">
+    <label for="v-volume" class="field-range__name  visually-hidden">Video volume control</label>
+    <div class="field-range__input-wrap">
+      <input id="v-volume" class="field-range__input" type="range" min="1" max="100" value="50">
+    </div>
+  </div>
+
+  <span class="video-card-9-16__fullscreen js-video-fullscreen" role="button" tabindex="0" aria-label="Fullscreen">
+    <svg width="32" height="32" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#fullscreen"></use></svg>
+  </span>
+
+</div>
