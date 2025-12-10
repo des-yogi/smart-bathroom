@@ -88,11 +88,14 @@
     }
 
     &::-moz-range-thumb {
-      @include field-range-slider-thumb; // локальная примесь!
+      @include field-range-slider-thumb;
+      // fix opacity
+      clip-path: circle(100%);
     }
 
     &::-ms-thumb {
       @include field-range-slider-thumb; // локальная примесь!
+      background-color: $text-color !important;
     }
 
     &::-ms-fill-lower,
