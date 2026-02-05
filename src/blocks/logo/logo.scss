@@ -20,13 +20,13 @@
   &--footer {
 
     img {
-      width: 82px;
-      height: 140px;
+      width: 82px !important;
+      height: 140px !important;
 
-      @media (min-width: $screen-xl) {
-        width: 82px;
-        height: 140px;
-      }
+      // @media (min-width: $screen-xl) {
+      //   width: 82px;
+      //   height: 140px;
+      // }
     }
   }
 }
