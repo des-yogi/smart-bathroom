@@ -229,6 +229,16 @@ h6 {
   }
 }
 
+div,
+article,
+aside,
+section {
+
+  & > *:first-child {
+    margin-top: 0;
+  }
+}
+
 .p,
 p,
 ul,
